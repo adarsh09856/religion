@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events, Festivals &amp; Panchang | Bhutan Hindu Dharma Sabha</title>
-  <meta name="description" content="Official Bhutan Hindu Panchang Calendar & Festivals. Maha Shivaratri, Janmashtami, Durga Puja, Deepawali dates and puja muhurats at Samteling Temple, Thimphu.">
+  <meta name="description" content="Annual Hindu festivals, auspicious Panchang calendar, daily temple aarti schedules, and community cultural gatherings in Thimphu, Bhutan.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
           <a href="#" onclick="alert('Register as Member')">Register</a>
         </div>
 
-        <button type="button" class="btn-donate-saffron" onclick="location.href='donate.html'">
+        <button type="button" class="btn-donate-saffron" data-open-modal="donate">
           <span>🕉️ Donate Now</span>
         </button>
       </div>
@@ -59,13 +59,15 @@
   <header class="temple-main-header">
     <div class="container temple-header-row">
       <div class="temple-brand-cluster">
-        <a href="index.html"><img src="assets/om-crest.jpg" alt="Om Medallion" class="om-crest-image" id="omCrestBtn" title="Click to ring temple bell"></a>
-        <div class="temple-text-titles">
-          <h1 class="temple-h1-name">Bhutan Hindu Dharma Sabha</h1>
-          <div class="temple-h1-sub">&amp; Thimphu Hindu Temple (Samteling)</div>
-          <div class="temple-motto-shloka">|| धर्मो रक्षति रक्षितः ||</div>
-          <div class="temple-four-pillars">Faith &nbsp;|&nbsp; Culture &nbsp;|&nbsp; Service &nbsp;|&nbsp; Unity</div>
-        </div>
+        <a href="index.html" style="display:flex; align-items:center; gap:16px;">
+          <img src="assets/om-crest.jpg" alt="Om Medallion" class="om-crest-image" title="Click to ring temple bell">
+          <div class="temple-text-titles">
+            <h1 class="temple-h1-name">Bhutan Hindu Dharma Sabha</h1>
+            <div class="temple-h1-sub">&amp; Thimphu Hindu Temple (Samteling)</div>
+            <div class="temple-motto-shloka">|| धर्मो रक्षति रक्षितः ||</div>
+            <div class="temple-four-pillars">Faith &nbsp;|&nbsp; Culture &nbsp;|&nbsp; Service &nbsp;|&nbsp; Unity</div>
+          </div>
+        </a>
       </div>
 
       <div class="endless-knot-icon">
@@ -74,162 +76,197 @@
     </div>
   </header>
 
-  <!-- NAVIGATION BAR -->
+  <!-- NAVIGATION RIBBON -->
   <nav class="temple-nav-ribbon" aria-label="Main Sanctuary Navigation">
     <div class="container">
       <ul class="temple-nav-list">
         <li class="temple-nav-item"><a href="index.html">Home</a></li>
-        <li class="temple-nav-item"><a href="index.html#about">About Us ▾</a></li>
+        <li class="temple-nav-item"><a href="about.html">About Us ▾</a></li>
         <li class="temple-nav-item"><a href="pujas.html">Temple ▾</a></li>
         <li class="temple-nav-item active"><a href="events.html">Events &amp; Festivals ▾</a></li>
         <li class="temple-nav-item"><a href="donate.html">Seva &amp; Donations ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#gallery">Gallery ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#news">News &amp; Updates ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#community">Community ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#contact">Contact Us</a></li>
+        <li class="temple-nav-item"><a href="gallery.html">Gallery ▾</a></li>
+        <li class="temple-nav-item"><a href="events.html">News &amp; Updates ▾</a></li>
+        <li class="temple-nav-item"><a href="about.html">Community ▾</a></li>
+        <li class="temple-nav-item"><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section style="background: linear-gradient(135deg, #071727 0%, #0d2847 60%, #1e1b4b 100%); color: #fff; padding: 48px 0; border-bottom: 3px solid #f59e0b; text-align: center;">
+  <!-- SUBPAGE HERO BANNER -->
+  <section class="subpage-temple-hero">
     <div class="container">
-      <span style="font-size:0.85rem; font-weight:800; color:#f59e0b; letter-spacing:1.5px; text-transform:uppercase;">|| कालोऽस्मि लोकक्षयकृत्प्रवृद्धो ||</span>
-      <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 900; margin: 6px 0 10px;">Sanatan Festivals &amp; Bhutan Panchang</h1>
-      <p style="color: #cbd5e1; max-width: 680px; margin: 0 auto; font-size: 0.95rem;">
-        Year-round spiritual observances, lunar tithi calendars, auspicious muhurats, and grand utsav celebrations at Samteling Temple, Thimphu.
+      <span class="subpage-temple-tagline">|| कालोऽस्मि लोकक्षयकृत्प्रवृद्धो ||</span>
+      <h1 class="subpage-temple-title">Festivals, Events &amp; Holy Panchang</h1>
+      <p class="subpage-temple-desc">
+        Celebrate ancient Vedic festivals with the Bhutanese Hindu community. Check auspicious daily Tithis, Rahu Kaal, Ekadashi, and Purnima dates in Thimphu.
       </p>
+      <div class="subpage-temple-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Events &amp; Festivals</span>
+      </div>
     </div>
   </section>
 
-  <!-- UPCOMING FESTIVALS SECTION -->
-  <section style="background: #fdfbf7; padding: 45px 0 60px;">
+  <!-- UPCOMING MAJOR FESTIVALS GRID -->
+  <section style="padding: 50px 0; background: #ffffff;">
     <div class="container">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:28px; flex-wrap:wrap; gap:12px;">
-        <div>
-          <h2 style="font-size: 1.6rem; font-weight: 900; color: #7f1d1d; margin: 0;">2025&ndash;2026 Auspicious Festivals</h2>
-          <span style="font-size: 0.88rem; color: #64748b;">Celebrated in accordance with Himalayan Vedic astronomy and local royal holidays</span>
-        </div>
-        <button type="button" class="btn-donate-saffron" onclick="alert('Bhutan Sanatan Panchang 2025-2026 PDF download starting...')">
-          <span>📥 Download Full Panchang (PDF)</span>
-        </button>
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 35px;">
+        <span class="subpage-temple-tagline" style="color: #d97706;">Utsav Calendar</span>
+        <h2 style="font-size: 1.85rem; font-weight: 900; color: #6b1414; margin-top: 6px;">Upcoming Temple Celebrations</h2>
+        <p style="font-size: 0.88rem; color: #64748b; margin-top: 6px;">All devotees and visitors to the Kingdom of Bhutan are cordially invited to take part.</p>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 24px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px;">
         <!-- Festival 1 -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 24px; border-left: 5px solid #ef4444;">
-          <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 8px;">
-            <span style="background: #fee2e2; color: #991b1b; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 9999px;">12 OCTOBER 2025</span>
-            <span style="font-size: 0.75rem; font-weight: 700; color: #ef4444;">All-Night Vigil</span>
+        <div style="background: #fffbeb; border: 1px solid #fed7aa; border-radius: 8px; padding: 22px; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 12px;">
+            <div class="event-cal-box" style="margin: 0; min-width: 55px; height: 55px;">
+              <span class="cal-day-num">12</span>
+              <span class="cal-month-name">OCT</span>
+            </div>
+            <div>
+              <span style="font-size: 0.72rem; font-weight: 800; color: #8b1e1e; text-transform: uppercase;">Maha Shivaratri</span>
+              <h3 style="font-size: 1.05rem; font-weight: 900; color: #071727;">Maha Shivaratri Celebration</h3>
+            </div>
           </div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Maha Shivaratri Celebration</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 16px; flex-grow: 1;">
-            Continuous 4-Pahar sacred Bilva Patra Abhishekam to Lord Shiva, Rudram chanting, Maha Mangala Aarti at 4:00 AM, and distribution of sanctified Mahaprasadam to 2,000+ devotees.
+          <p style="font-size: 0.82rem; color: #475569; line-height: 1.5; margin-bottom: 14px; flex-grow: 1;">
+            All-night four-prahara Rudrabhishek, continuous bilva patra offerings, and Vedic chanting at Samteling Shiva Sanctum.
           </p>
-          <button type="button" class="btn-know-more" onclick="openRsvpModal('Maha Shivaratri Celebration', '12 Oct 2025')">
-            <span>RSVP for Sankalpa</span>
-            <span>&rarr;</span>
+          <div style="font-size: 0.75rem; color: #64748b; margin-bottom: 12px;">📍 Thimphu Hindu Temple | 6:00 PM onwards</div>
+          <button type="button" class="btn-donate-saffron" style="justify-content: center;" onclick="alert('RSVP confirmed for Maha Shivaratri! Prasadam token will be provided at the entrance.')">
+            RSVP for Darshan
           </button>
-        </article>
+        </div>
 
         <!-- Festival 2 -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 24px; border-left: 5px solid #f59e0b;">
-          <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 8px;">
-            <span style="background: #fef3c7; color: #92400e; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 9999px;">18 OCTOBER 2025</span>
-            <span style="font-size: 0.75rem; font-weight: 700; color: #d97706;">Midnight Darshan</span>
+        <div style="background: #fffbeb; border: 1px solid #fed7aa; border-radius: 8px; padding: 22px; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 12px;">
+            <div class="event-cal-box" style="margin: 0; min-width: 55px; height: 55px;">
+              <span class="cal-day-num">18</span>
+              <span class="cal-month-name">OCT</span>
+            </div>
+            <div>
+              <span style="font-size: 0.72rem; font-weight: 800; color: #8b1e1e; text-transform: uppercase;">Shri Krishna Janmashtami</span>
+              <h3 style="font-size: 1.05rem; font-weight: 900; color: #071727;">Janmashtami Mahotsav</h3>
+            </div>
           </div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Shri Krishna Janmashtami Mahotsav</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 16px; flex-grow: 1;">
-            Divya Janma Darshan at midnight 12:00 AM, Laddu Gopal cradle jhula seva, Vedic bhajan sandhya, traditional Bhutanese cultural dance performance, and 108 bhog offerings.
+          <p style="font-size: 0.82rem; color: #475569; line-height: 1.5; margin-bottom: 14px; flex-grow: 1;">
+            Midnight birth celebration of Lord Krishna, Bhajan kirtan by youth mandali, Dahi Handi, and Makhan Bhog distribution.
           </p>
-          <button type="button" class="btn-know-more" onclick="openRsvpModal('Shri Krishna Janmashtami', '18 Oct 2025')">
-            <span>RSVP for Sankalpa</span>
-            <span>&rarr;</span>
+          <div style="font-size: 0.75rem; color: #64748b; margin-bottom: 12px;">📍 Samteling Temple Hall | 7:00 PM – Midnight</div>
+          <button type="button" class="btn-donate-saffron" style="justify-content: center;" onclick="alert('RSVP confirmed for Janmashtami Mahotsav!')">
+            RSVP for Darshan
           </button>
-        </article>
+        </div>
 
         <!-- Festival 3 -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 24px; border-left: 5px solid #7f1d1d;">
-          <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 8px;">
-            <span style="background: #ffe4e6; color: #881337; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 9999px;">25 OCTOBER 2025</span>
-            <span style="font-size: 0.75rem; font-weight: 700; color: #7f1d1d;">9-Day Mahotsav</span>
+        <div style="background: #fffbeb; border: 1px solid #fed7aa; border-radius: 8px; padding: 22px; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 12px;">
+            <div class="event-cal-box" style="margin: 0; min-width: 55px; height: 55px;">
+              <span class="cal-day-num">25</span>
+              <span class="cal-month-name">OCT</span>
+            </div>
+            <div>
+              <span style="font-size: 0.72rem; font-weight: 800; color: #8b1e1e; text-transform: uppercase;">Sharad Navratri</span>
+              <h3 style="font-size: 1.05rem; font-weight: 900; color: #071727;">Durga Puja &amp; Vijayadashami</h3>
+            </div>
           </div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Sharad Navaratri &amp; Durga Puja</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 16px; flex-grow: 1;">
-            Chandi Havan, daily Durga Saptashati Parayanam, Maha Ashtami Sandhi Puja, Kanya Pujan blessing ceremony for 108 young girls, and grand Sindoor Khela on Vijayadashami.
+          <p style="font-size: 0.82rem; color: #475569; line-height: 1.5; margin-bottom: 14px; flex-grow: 1;">
+            9 days of Sri Chandi Parayanam, Kumkum archana, Sindoor Khela, and grand Vijayadashami Tika blessings with elders.
           </p>
-          <button type="button" class="btn-know-more" onclick="openRsvpModal('Sharad Durga Puja', '25 Oct 2025')">
-            <span>RSVP for Sankalpa</span>
-            <span>&rarr;</span>
+          <div style="font-size: 0.75rem; color: #64748b; margin-bottom: 12px;">📍 Samteling Temple Sanctum | All Day</div>
+          <button type="button" class="btn-donate-saffron" style="justify-content: center;" onclick="alert('RSVP confirmed for Durga Puja!')">
+            RSVP for Darshan
           </button>
-        </article>
+        </div>
 
         <!-- Festival 4 -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 24px; border-left: 5px solid #10b981;">
-          <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 8px;">
-            <span style="background: #d1fae5; color: #065f46; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 9999px;">12 NOVEMBER 2025</span>
-            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981;">Deepotsav</span>
+        <div style="background: #fffbeb; border: 1px solid #fed7aa; border-radius: 8px; padding: 22px; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 12px;">
+            <div class="event-cal-box" style="margin: 0; min-width: 55px; height: 55px;">
+              <span class="cal-day-num">05</span>
+              <span class="cal-month-name">NOV</span>
+            </div>
+            <div>
+              <span style="font-size: 0.72rem; font-weight: 800; color: #8b1e1e; text-transform: uppercase;">Kartik Purnima</span>
+              <h3 style="font-size: 1.05rem; font-weight: 900; color: #071727;">Special Abhishekam &amp; Yajna</h3>
+            </div>
           </div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Deepawali &amp; Maha Lakshmi Pujan</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 16px; flex-grow: 1;">
-            Lighting of 10,008 earthen ghee diyas across Samteling temple mandap, Kuber Yajna, business ledger chopda pujan, and distribution of special prasad sweets.
+          <p style="font-size: 0.82rem; color: #475569; line-height: 1.5; margin-bottom: 14px; flex-grow: 1;">
+            Deepotsav with 1,008 oil lamps lighting the temple perimeter, sacred Havan for national peace, and community Bhojan.
           </p>
-          <button type="button" class="btn-know-more" onclick="openRsvpModal('Deepawali Lakshmi Pujan', '12 Nov 2025')">
-            <span>RSVP for Sankalpa</span>
-            <span>&rarr;</span>
+          <div style="font-size: 0.75rem; color: #64748b; margin-bottom: 12px;">📍 Thimphu Temple Courtyard | 4:30 PM</div>
+          <button type="button" class="btn-donate-saffron" style="justify-content: center;" onclick="alert('RSVP confirmed for Deepotsav!')">
+            RSVP for Darshan
           </button>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- BHUTAN PANCHANG TABLE -->
-  <section style="background: #ffffff; padding: 45px 0 60px; border-top: 1px solid #e2e8f0;">
+  <!-- BHUTAN PANCHANG CALENDAR TABLE -->
+  <section style="padding: 50px 0 65px; background: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
     <div class="container">
-      <div style="text-align: center; max-width: 650px; margin: 0 auto 30px;">
-        <span style="font-size: 0.8rem; font-weight: 800; color: #d97706; text-transform: uppercase;">Sanatan Himalayan Astronomy</span>
-        <h2 style="font-size: 1.5rem; font-weight: 900; color: #7f1d1d; margin: 4px 0;">Monthly Tithi &amp; Muhurat Guide (Thimphu Standard Time)</h2>
+      <div style="text-align: center; max-width: 650px; margin: 0 auto 25px;">
+        <span class="subpage-temple-tagline" style="color: #0284c7;">Auspicious Almanac</span>
+        <h2 style="font-size: 1.8rem; font-weight: 900; color: #071727; margin-top: 6px;">Samteling Hindu Panchang 2026</h2>
+        <p style="font-size: 0.88rem; color: #64748b; margin-top: 6px;">Calculated specifically for Thimphu coordinates (27.4728° N, 89.6393° E).</p>
       </div>
 
-      <div style="overflow-x: auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
-        <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left;">
-          <thead style="background: #0d2847; color: #fff;">
+      <div style="overflow-x: auto;">
+        <table class="panchang-table">
+          <thead>
             <tr>
-              <th style="padding: 14px 18px;">Gregorian Date</th>
-              <th style="padding: 14px 18px;">Hindu Masa &amp; Paksha</th>
-              <th style="padding: 14px 18px;">Tithi</th>
-              <th style="padding: 14px 18px;">Nakshatra</th>
-              <th style="padding: 14px 18px;">Auspicious Occasion</th>
+              <th>Date</th>
+              <th>Day</th>
+              <th>Tithi &amp; Paksha</th>
+              <th>Nakshatra</th>
+              <th>Auspicious Muhurat</th>
+              <th>Religious Observance</th>
             </tr>
           </thead>
           <tbody>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 12px 18px; font-weight: 700;">12 Oct 2025</td>
-              <td style="padding: 12px 18px;">Kartika Krishna</td>
-              <td style="padding: 12px 18px;">Chaturdashi</td>
-              <td style="padding: 12px 18px;">Uttara Phalguni</td>
-              <td style="padding: 12px 18px; color: #ef4444; font-weight: 700;">Maha Shivaratri Fast</td>
+            <tr>
+              <td><strong>12 Oct 2026</strong></td>
+              <td>Monday</td>
+              <td>Trayodashi (Krishna)</td>
+              <td>Ardra</td>
+              <td>11:45 AM &ndash; 12:35 PM</td>
+              <td><span style="color:#8b1e1e; font-weight:800;">Maha Shivaratri Vrat</span></td>
             </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0; background: #fdfbf7;">
-              <td style="padding: 12px 18px; font-weight: 700;">18 Oct 2025</td>
-              <td style="padding: 12px 18px;">Kartika Shukla</td>
-              <td style="padding: 12px 18px;">Ashtami</td>
-              <td style="padding: 12px 18px;">Rohini</td>
-              <td style="padding: 12px 18px; color: #d97706; font-weight: 700;">Gopashtami &amp; Gau Pujan</td>
+            <tr>
+              <td><strong>18 Oct 2026</strong></td>
+              <td>Sunday</td>
+              <td>Ashtami (Krishna)</td>
+              <td>Rohini</td>
+              <td>11:50 PM &ndash; 12:40 AM (Nishita)</td>
+              <td><span style="color:#8b1e1e; font-weight:800;">Shri Krishna Janmashtami</span></td>
             </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 12px 18px; font-weight: 700;">25 Oct 2025</td>
-              <td style="padding: 12px 18px;">Ashwina Shukla</td>
-              <td style="padding: 12px 18px;">Dashami</td>
-              <td style="padding: 12px 18px;">Shravana</td>
-              <td style="padding: 12px 18px; color: #7f1d1d; font-weight: 700;">Vijayadashami (Dussehra)</td>
+            <tr>
+              <td><strong>20 Oct 2026</strong></td>
+              <td>Tuesday</td>
+              <td>Ekadashi (Shukla)</td>
+              <td>Uttara Ashadha</td>
+              <td>09:15 AM &ndash; 10:45 AM</td>
+              <td><span style="color:#d97706; font-weight:700;">Papankusha Ekadashi</span></td>
             </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0; background: #fdfbf7;">
-              <td style="padding: 12px 18px; font-weight: 700;">05 Nov 2025</td>
-              <td style="padding: 12px 18px;">Kartika Shukla</td>
-              <td style="padding: 12px 18px;">Purnima</td>
-              <td style="padding: 12px 18px;">Krittika</td>
-              <td style="padding: 12px 18px; color: #0284c7; font-weight: 700;">Kartik Purnima &amp; Dev Deepawali</td>
+            <tr>
+              <td><strong>25 Oct 2026</strong></td>
+              <td>Sunday</td>
+              <td>Navami / Dashami</td>
+              <td>Shravana</td>
+              <td>07:30 AM &ndash; 09:00 AM</td>
+              <td><span style="color:#8b1e1e; font-weight:800;">Maha Navami &amp; Vijayadashami</span></td>
+            </tr>
+            <tr>
+              <td><strong>05 Nov 2026</strong></td>
+              <td>Thursday</td>
+              <td>Purnima (Shukla)</td>
+              <td>Krittika</td>
+              <td>05:00 PM &ndash; 06:45 PM</td>
+              <td><span style="color:#d97706; font-weight:700;">Kartik Purnima &amp; Deepotsav</span></td>
             </tr>
           </tbody>
         </table>
@@ -237,57 +274,90 @@
     </div>
   </section>
 
-  <!-- MAIN FOOTER - EXACT DESIGN MATCH -->
-  <footer class="temple-main-footer" id="contact">
+  <!-- LATEST NEWS & UPDATES (EXACT FROM DESIGN COMP) -->
+  <section style="padding: 50px 0; background: #ffffff;" id="news">
     <div class="container">
-      <div class="temple-footer-top-grid">
-        <div class="footer-temple-brand">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="assets/om-crest.jpg" alt="Om Seal" class="footer-om-seal">
+      <div class="section-title-line" style="margin-bottom: 24px;">
+        <div class="section-badge-title">
+          <span class="title-glyph red">📰</span>
+          <div>
+            <h2 class="title-main-text">Latest News &amp; Updates</h2>
+            <div class="title-sub-text">Official announcements and community gazette from the Sabha</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        <div class="news-list-item" style="display:flex; flex-direction:column; border:1px solid #e2e8f0; padding:16px; border-radius:6px; cursor:pointer;" onclick="openNewsArticle('Temple Renovation Project Update', '08 Oct 2025', 'Stone mason artisans have arrived from Rajasthan to complete the hand-carved pillars for the Samteling inner garbhagriha.', 'assets/news-1.jpg')">
+          <img src="assets/news-1.jpg" alt="Temple Renovation" style="width:100%; height:140px; object-fit:cover; border-radius:4px; margin-bottom:10px;">
+          <h4 style="font-size:0.92rem; font-weight:800; color:#071727; margin-bottom:4px;">Temple Renovation Project Update</h4>
+          <span style="font-size:0.75rem; color:#8b1e1e; font-weight:700;">08 Oct 2025</span>
+        </div>
+
+        <div class="news-list-item" style="display:flex; flex-direction:column; border:1px solid #e2e8f0; padding:16px; border-radius:6px; cursor:pointer;" onclick="openNewsArticle('Community Health Camp at Thimphu', '28 Sep 2025', 'Over 450 devotees received free diagnostic check-ups, dental consultations and eye tests organized by Sabha volunteer doctors.', 'assets/news-2.jpg')">
+          <img src="assets/news-2.jpg" alt="Health Camp" style="width:100%; height:140px; object-fit:cover; border-radius:4px; margin-bottom:10px;">
+          <h4 style="font-size:0.92rem; font-weight:800; color:#071727; margin-bottom:4px;">Community Health Camp at Thimphu</h4>
+          <span style="font-size:0.75rem; color:#8b1e1e; font-weight:700;">28 Sep 2025</span>
+        </div>
+
+        <div class="news-list-item" style="display:flex; flex-direction:column; border:1px solid #e2e8f0; padding:16px; border-radius:6px; cursor:pointer;" onclick="openNewsArticle('Youth Cultural Program Registration Open', '22 Sep 2025', 'Enrollment is now active for Sanskrit shloka recital classes, classical Bharatnatyam dance and tabla training.', 'assets/news-3.jpg')">
+          <img src="assets/news-3.jpg" alt="Youth Cultural" style="width:100%; height:140px; object-fit:cover; border-radius:4px; margin-bottom:10px;">
+          <h4 style="font-size:0.92rem; font-weight:800; color:#071727; margin-bottom:4px;">Youth Cultural Program Registration Open</h4>
+          <span style="font-size:0.75rem; color:#8b1e1e; font-weight:700;">22 Sep 2025</span>
+        </div>
+
+        <div class="news-list-item" style="display:flex; flex-direction:column; border:1px solid #e2e8f0; padding:16px; border-radius:6px; cursor:pointer;" onclick="openNewsArticle('Donation Appeal for Orphanage & Gaushala', '12 Sep 2025', 'The annual winter blanket and nutritious ration drive has commenced for children and the sacred cattle refuge.', 'assets/news-4.jpg')">
+          <img src="assets/news-4.jpg" alt="Donation Appeal" style="width:100%; height:140px; object-fit:cover; border-radius:4px; margin-bottom:10px;">
+          <h4 style="font-size:0.92rem; font-weight:800; color:#071727; margin-bottom:4px;">Donation Appeal for Orphanage &amp; Gaushala</h4>
+          <span style="font-size:0.75rem; color:#8b1e1e; font-weight:700;">12 Sep 2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="temple-main-footer">
+    <div class="container">
+      <div class="temple-footer-grid-row">
+        <div>
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+            <img src="assets/footer-om.jpg" alt="Bhutan Hindu Dharma Logo" style="height:36px; border-radius:50%;">
             <div>
-              <div class="footer-sabha-title">Bhutan Hindu Dharma Sabha</div>
-              <div class="footer-sabha-sub">&amp; Thimphu Hindu Temple (Samteling)</div>
+              <div style="font-weight:800; font-size:0.95rem; color:#fff;">Bhutan Hindu Dharma Sabha</div>
+              <div style="font-size:0.75rem; color:#f59e0b;">&amp; Thimphu Hindu Temple (Samteling)</div>
             </div>
           </div>
-          <div class="footer-four-pillars">Faith &bull; Culture &bull; Service &bull; Unity</div>
+          <p style="font-size:0.78rem; color:#94a3b8; line-height:1.5;">
+            Faith &bull; Culture &bull; Service &bull; Unity. Preserving ancient Sanatan heritage and communal harmony in the Kingdom of Bhutan.
+          </p>
         </div>
 
         <div>
-          <h4 class="footer-links-heading">Quick Links</h4>
-          <ul class="footer-nav-list">
+          <h4 class="temple-footer-heading">Quick Links</h4>
+          <ul class="temple-footer-nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="pujas.html">Temple</a></li>
+            <li><a href="about.html">About Sabha</a></li>
+            <li><a href="pujas.html">Temple Pujas</a></li>
             <li><a href="events.html">Events &amp; Festivals</a></li>
             <li><a href="donate.html">Seva &amp; Donations</a></li>
-            <li><a href="index.html#gallery">Gallery</a></li>
-            <li><a href="index.html#news">News &amp; Updates</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-links-heading">Contact Us</h4>
-          <div class="footer-contact-item">
-            <span>📍</span>
-            <span>Samteling, Thimphu, Bhutan</span>
-          </div>
-          <div class="footer-contact-item">
-            <span>📞</span>
-            <span>+975 2 3311 123</span>
-          </div>
-          <div class="footer-contact-item">
-            <span>✉️</span>
-            <span>info@bhutanhindudharma.com</span>
-          </div>
-          <div class="footer-contact-item">
-            <span>🌐</span>
-            <span>www.bhutanhindudharma.com</span>
-          </div>
+          <h4 class="temple-footer-heading">Contact Us</h4>
+          <ul class="temple-footer-nav-list">
+            <li>📍 Samteling, Thimphu, Bhutan</li>
+            <li>📞 +975 2 3311 123</li>
+            <li>✉️ info@bhutanhindudharma.com</li>
+            <li>🌐 www.bhutanhindudharma.com</li>
+          </ul>
         </div>
 
         <div>
-          <h4 class="footer-links-heading">Follow Us</h4>
-          <div class="temple-social-row">
+          <h4 class="temple-footer-heading">Follow Us</h4>
+          <div class="temple-social-row" style="margin-bottom:12px;">
             <a href="#" class="social-circle-temple fb"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
             <a href="#" class="social-circle-temple yt"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z"/></svg></a>
             <a href="#" class="social-circle-temple ig"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path></svg></a>
@@ -295,47 +365,43 @@
         </div>
       </div>
 
-      <div class="temple-footer-bottom">
-        <p>&copy; 2025 Bhutan Hindu Dharma Sabha &amp; Thimphu Hindu Temple (Samteling). All Rights Reserved.</p>
-        <p style="color:#f59e0b; font-size:0.75rem;">Designed with ❤️ in Bhutan</p>
+      <div class="temple-footer-bottom-bar">
+        &copy; 2025 Bhutan Hindu Dharma Sabha &amp; Thimphu Hindu Temple (Samteling). All Rights Reserved. Designed with ❤️ in Bhutan
       </div>
     </div>
   </footer>
 
-  <!-- NATIVE MODAL: RSVP SANKALPA -->
-  <dialog id="rsvpModal" aria-labelledby="rsvpModalTitle" style="padding:0; border:none; border-radius:14px; max-width:480px; width:90%; background:#fff; color:#0f172a; box-shadow:0 20px 40px rgba(0,0,0,0.3);">
-    <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; background:#7f1d1d; color:#fff;">
-      <span id="rsvpModalTitle" style="font-weight:800; font-size:1rem;">RSVP for Festival Puja Sankalpa</span>
-      <button type="button" onclick="document.getElementById('rsvpModal').close()" style="background:none; border:none; color:#fff; font-size:1.3rem; cursor:pointer;">✕</button>
+  <!-- NATIVE NEWS MODAL -->
+  <dialog id="newsModal" aria-labelledby="newsModalTitle">
+    <div style="background:#8b1e1e; color:#fff; padding:12px 18px; display:flex; justify-content:space-between; align-items:center;">
+      <span id="newsModalTitle" style="font-weight:800; font-size:0.95rem;">Temple Gazette</span>
+      <button type="button" data-close-modal="newsModal" style="background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✕</button>
     </div>
-    <div style="padding:22px;">
-      <form onsubmit="event.preventDefault(); alert('Devotee Sankalpa registered! Priests will include your family gotra in the Maha Mangala Aarti.'); document.getElementById('rsvpModal').close();">
+    <div id="newsModalBody" style="padding:20px;"></div>
+  </dialog>
+
+  <!-- NATIVE DONATION MODAL -->
+  <dialog id="donationModal" aria-labelledby="donationModalTitle">
+    <div style="background:#8b1e1e; color:#fff; padding:14px 18px; display:flex; justify-content:space-between; align-items:center;">
+      <h3 id="donationModalTitle" style="font-size:1rem; font-weight:800;">Online Temple Donation &amp; Seva</h3>
+      <button type="button" data-close-modal="donationModal" style="background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✕</button>
+    </div>
+    <div style="padding:20px;">
+      <form id="donationForm">
         <div style="margin-bottom:12px;">
-          <input type="text" id="rsvpFestivalField" class="form-field-input" readonly style="background:#f1f5f9; font-weight:700; width:100%; padding-left:12px;">
+          <input type="number" value="501" placeholder="Amount (Nu.)" style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:4px;" required>
         </div>
-        <div style="margin-bottom:12px;">
-          <input type="text" placeholder="Devotee Name" class="form-field-input" style="padding-left:12px; width:100%;" required>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;">
+          <input type="text" placeholder="Devotee Name" style="padding:8px; border:1px solid #cbd5e1; border-radius:4px;" required>
+          <input type="tel" placeholder="Phone Number" style="padding:8px; border:1px solid #cbd5e1; border-radius:4px;" required>
         </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px;">
-          <input type="text" placeholder="Gotra (e.g. Kashyapa)" class="form-field-input" style="padding-left:12px; width:100%;">
-          <input type="number" placeholder="Attending Devotees" min="1" value="2" class="form-field-input" style="padding-left:12px; width:100%;" required>
-        </div>
-        <div style="margin-bottom:14px;">
-          <input type="tel" placeholder="Phone Number" class="form-field-input" style="padding-left:12px; width:100%;" required>
-        </div>
-        <button type="submit" class="btn-donate-saffron" style="width:100%; padding:12px; font-size:0.95rem; justify-content:center;">
-          Confirm Sankalpa Registration
+        <button type="submit" style="width:100%; background:#d97706; color:#fff; padding:10px; border:none; border-radius:4px; font-weight:800; cursor:pointer;">
+          Submit Donation
         </button>
       </form>
     </div>
   </dialog>
 
   <script src="js/main.js"></script>
-  <script>
-    function openRsvpModal(festival, date) {
-      document.getElementById('rsvpFestivalField').value = `${festival} – ${date}`;
-      document.getElementById('rsvpModal').showModal();
-    }
-  </script>
 </body>
 </html>

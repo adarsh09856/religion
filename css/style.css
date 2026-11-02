@@ -828,3 +828,297 @@ button, input, select {
     text-align: center;
   }
 }
+
+
+/* ==========================================================================
+   TEMPLE SUBPAGE SUITE (Donate, Events, Pujas, About, Gallery, Contact)
+   Ultra-consistent with Sanatan Dharma Sanctuary Design Comp
+   ========================================================================== */
+
+.subpage-temple-hero {
+  background: linear-gradient(135deg, #071727 0%, #3d0c0c 50%, #6b1414 100%);
+  color: #ffffff;
+  padding: 50px 0 45px;
+  border-bottom: 4px solid var(--saffron-gold);
+  position: relative;
+  text-align: center;
+}
+
+.subpage-temple-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/divine-hero.jpg') center right / cover no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.subpage-temple-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.subpage-temple-tagline {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #facc15;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.subpage-temple-title {
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.subpage-temple-desc {
+  font-size: 0.95rem;
+  color: #fed7aa;
+  max-width: 680px;
+  margin: 0 auto 16px;
+  line-height: 1.6;
+}
+
+.subpage-temple-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  color: #fef08a;
+}
+
+.subpage-temple-breadcrumb a {
+  color: #ffffff;
+}
+
+.subpage-temple-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Causes & Seva Grid */
+.cause-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 35px 0 50px;
+}
+
+.cause-card-box {
+  background: #ffffff;
+  border: 1px solid #fed7aa;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(139, 30, 30, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cause-card-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(139, 30, 30, 0.12);
+}
+
+.cause-photo-frame {
+  height: 170px;
+  overflow: hidden;
+}
+
+.cause-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cause-card-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cause-card-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #6b1414;
+  margin-bottom: 8px;
+}
+
+.cause-card-desc {
+  font-size: 0.84rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.cause-progress-bar-bg {
+  height: 8px;
+  background: #f1f5f9;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.cause-progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+  border-radius: 4px;
+}
+
+.cause-stats-split {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 16px;
+}
+
+/* Preset Donation Buttons */
+.donation-preset-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 14px 0;
+}
+
+.preset-amount-pill {
+  padding: 8px 16px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  border-radius: var(--radius-sm);
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.preset-amount-pill:hover,
+.preset-amount-pill.active {
+  background: #8b1e1e;
+  color: #ffffff;
+  border-color: #8b1e1e;
+}
+
+/* Panchang Calendar Table */
+.panchang-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid #fed7aa;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  margin-top: 20px;
+}
+
+.panchang-table th {
+  background: #071727;
+  color: #facc15;
+  padding: 12px 14px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.panchang-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.84rem;
+  color: #334155;
+}
+
+.panchang-table tr:hover {
+  background: #fffbeb;
+}
+
+/* Puja Offerings Grid */
+.pujas-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.puja-card-tile {
+  background: #ffffff;
+  border: 1px solid #fde68a;
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s;
+}
+
+.puja-card-tile:hover {
+  border-color: #f59e0b;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.15);
+}
+
+.puja-deity-symbol {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.puja-tile-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #6b1414;
+  margin-bottom: 6px;
+}
+
+.puja-tile-dakshina {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #d97706;
+  margin-bottom: 10px;
+}
+
+.puja-tile-desc {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+/* Darshan Schedule Card */
+.darshan-schedule-box {
+  background: #fffbeb;
+  border: 1px solid #fed7aa;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .cause-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .pujas-catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pujas-catalog-grid {
+    grid-template-columns: 1fr;
+  }
+}

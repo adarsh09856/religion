@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seva &amp; Online Donation Desk | Bhutan Hindu Dharma Sabha</title>
-  <meta name="description" content="Online Donation & Seva Portal for Thimphu Hindu Temple (Samteling). Support Annadanam, Gaushala, Mandap Renovation, and Vedic Education in Bhutan.">
+  <title>Online Donation &amp; Seva | Bhutan Hindu Dharma Sabha &amp; Thimphu Temple</title>
+  <meta name="description" content="Contribute to Samteling Temple renovation, Annadanam free prasadam, Gaushala cow welfare, and priest dakshina. Receive digital blessing receipts.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <!-- TOP BAR -->
+  <!-- TOP BAR (EXACT AS HOMEPAGE) -->
   <header class="temple-top-bar">
     <div class="container">
       <div class="top-bar-contact-info">
@@ -55,17 +55,19 @@
     </div>
   </header>
 
-  <!-- MAIN HEADER -->
+  <!-- MAIN HEADER (EXACT AS HOMEPAGE) -->
   <header class="temple-main-header">
     <div class="container temple-header-row">
       <div class="temple-brand-cluster">
-        <a href="index.html"><img src="assets/om-crest.jpg" alt="Om Medallion" class="om-crest-image" id="omCrestBtn" title="Click to ring temple bell"></a>
-        <div class="temple-text-titles">
-          <h1 class="temple-h1-name">Bhutan Hindu Dharma Sabha</h1>
-          <div class="temple-h1-sub">&amp; Thimphu Hindu Temple (Samteling)</div>
-          <div class="temple-motto-shloka">|| धर्मो रक्षति रक्षितः ||</div>
-          <div class="temple-four-pillars">Faith &nbsp;|&nbsp; Culture &nbsp;|&nbsp; Service &nbsp;|&nbsp; Unity</div>
-        </div>
+        <a href="index.html" style="display:flex; align-items:center; gap:16px;">
+          <img src="assets/om-crest.jpg" alt="Om Medallion" class="om-crest-image" title="Click to ring temple bell">
+          <div class="temple-text-titles">
+            <h1 class="temple-h1-name">Bhutan Hindu Dharma Sabha</h1>
+            <div class="temple-h1-sub">&amp; Thimphu Hindu Temple (Samteling)</div>
+            <div class="temple-motto-shloka">|| धर्मो रक्षति रक्षितः ||</div>
+            <div class="temple-four-pillars">Faith &nbsp;|&nbsp; Culture &nbsp;|&nbsp; Service &nbsp;|&nbsp; Unity</div>
+          </div>
+        </a>
       </div>
 
       <div class="endless-knot-icon">
@@ -74,202 +76,295 @@
     </div>
   </header>
 
-  <!-- NAVIGATION BAR -->
+  <!-- NAVIGATION RIBBON -->
   <nav class="temple-nav-ribbon" aria-label="Main Sanctuary Navigation">
     <div class="container">
       <ul class="temple-nav-list">
         <li class="temple-nav-item"><a href="index.html">Home</a></li>
-        <li class="temple-nav-item"><a href="index.html#about">About Us ▾</a></li>
+        <li class="temple-nav-item"><a href="about.html">About Us ▾</a></li>
         <li class="temple-nav-item"><a href="pujas.html">Temple ▾</a></li>
         <li class="temple-nav-item"><a href="events.html">Events &amp; Festivals ▾</a></li>
         <li class="temple-nav-item active"><a href="donate.html">Seva &amp; Donations ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#gallery">Gallery ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#news">News &amp; Updates ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#community">Community ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#contact">Contact Us</a></li>
+        <li class="temple-nav-item"><a href="gallery.html">Gallery ▾</a></li>
+        <li class="temple-nav-item"><a href="events.html">News &amp; Updates ▾</a></li>
+        <li class="temple-nav-item"><a href="about.html">Community ▾</a></li>
+        <li class="temple-nav-item"><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section style="background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 50%, #071727 100%); color: #fff; padding: 48px 0; border-bottom: 3px solid #f59e0b; text-align: center;">
+  <!-- SUBPAGE HERO BANNER -->
+  <section class="subpage-temple-hero">
     <div class="container">
-      <span style="font-size:0.85rem; font-weight:800; color:#fef08a; letter-spacing:1.5px; text-transform:uppercase;">|| परोपकाराय पुण्याय पापाय परपीडनम् ||</span>
-      <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 900; margin: 6px 0 10px;">Sacred Seva &amp; Dharma Offerings</h1>
-      <p style="color: #fecaca; max-width: 680px; margin: 0 auto; font-size: 0.95rem;">
-        Support daily temple rituals, Nitya Annadanam meals, indigenous Gaushala cattle care, and Hindu cultural preservation across Bhutan.
+      <span class="subpage-temple-tagline">|| परोपकाराय पुण्याय पापाय परपीडनम् ||</span>
+      <h1 class="subpage-temple-title">Online Donation &amp; Holy Seva</h1>
+      <p class="subpage-temple-desc">
+        Your sacred contributions nurture the spiritual heritage of Bhutan, feed devotees through Annadanam, protect sacred cows, and sustain our ancient temples.
       </p>
-    </div>
-  </section>
-
-  <!-- MAIN DONATION SELECTION -->
-  <section style="background: #fdfbf7; padding: 45px 0 60px;">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 26px; margin-bottom: 40px;">
-        <!-- Cause 1: Nitya Annadanam -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 26px;">
-          <div style="font-size: 2.2rem; margin-bottom: 8px;">🍚</div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #7f1d1d; margin-bottom: 6px;">Nitya Annadanam (Prasadam Seva)</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 16px; flex-grow: 1;">
-            Provide sanctified vegetarian meals to 300+ daily pilgrims, sadhus and monks visiting Thimphu Temple. Sponsor in honour of family birthdays or pitru remembrance.
-          </p>
-          <div style="font-size: 1.25rem; font-weight: 900; color: #071727; margin-bottom: 14px;">Nu. 5,001 <span style="font-size: 0.8rem; color: #64748b; font-weight: 500;">/ Day Meal Sponsorship</span></div>
-          <button type="button" class="btn-donate-saffron" style="width: 100%; justify-content: center;" onclick="setDonationCause('Nitya Annadanam', '5001')">
-            <span>Sponsor Annadanam</span>
-          </button>
-        </article>
-
-        <!-- Cause 2: Gaushala & Gau Seva -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 26px;">
-          <div style="font-size: 2.2rem; margin-bottom: 8px;">🐄</div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #7f1d1d; margin-bottom: 6px;">Gaushala &amp; Indigenous Cow Welfare</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 16px; flex-grow: 1;">
-            Shelter, organic mountain grass fodder, clean water and veterinary treatment for 75+ indigenous Himalayan cattle housed at the Temple Gaushala.
-          </p>
-          <div style="font-size: 1.25rem; font-weight: 900; color: #071727; margin-bottom: 14px;">Nu. 2,100 <span style="font-size: 0.8rem; color: #64748b; font-weight: 500;">/ Monthly Fodder Unit</span></div>
-          <button type="button" class="btn-donate-saffron" style="width: 100%; justify-content: center;" onclick="setDonationCause('Gaushala Seva', '2100')">
-            <span>Support Gaushala</span>
-          </button>
-        </article>
-
-        <!-- Cause 3: Temple Mandap Renovation -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 26px;">
-          <div style="font-size: 2.2rem; margin-bottom: 8px;">🛕</div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #7f1d1d; margin-bottom: 6px;">Samteling Mandap &amp; Shikhara Renovation</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 16px; flex-grow: 1;">
-            Copper repoussé roofing, gilded gold kalash, traditional stone carving for the Garbhagriha (sanctum sanctorum) and community Yajnashala hall.
-          </p>
-          <div style="font-size: 1.25rem; font-weight: 900; color: #071727; margin-bottom: 14px;">Nu. 11,000 <span style="font-size: 0.8rem; color: #64748b; font-weight: 500;">/ Square Foot Endowment</span></div>
-          <button type="button" class="btn-donate-saffron" style="width: 100%; justify-content: center;" onclick="setDonationCause('Mandap Renovation', '11000')">
-            <span>Contribute to Mandap</span>
-          </button>
-        </article>
-      </div>
-
-      <!-- INTERACTIVE DONATION FORM WITH PRINTABLE RECEIPT GENERATOR -->
-      <div style="max-width: 680px; margin: 0 auto; background: #fff; border: 2px solid #f59e0b; border-radius: 14px; padding: 32px; box-shadow: 0 10px 30px rgba(245, 158, 11, 0.12);">
-        <div style="text-align: center; margin-bottom: 24px;">
-          <span style="font-size: 1.5rem; color: #d97706;">🕉️</span>
-          <h2 style="font-size: 1.5rem; font-weight: 900; color: #7f1d1d; margin: 4px 0;">Official Online Donation Portal</h2>
-          <p style="font-size: 0.85rem; color: #64748b;">Instant e-receipt generated with official seal of Bhutan Hindu Dharma Sabha.</p>
-        </div>
-
-        <form id="publicDonationForm" onsubmit="generateInstantReceipt(event)">
-          <div style="margin-bottom: 14px;">
-            <label style="display:block; font-size:0.82rem; font-weight:700; color:#334155; margin-bottom:6px;">Select Seva Cause</label>
-            <select id="donationCauseSelect" class="form-field-select" style="width:100%; padding:10px 12px;" required>
-              <option value="Nitya Annadanam (Prasadam Seva)">Nitya Annadanam (Prasadam Seva)</option>
-              <option value="Gaushala &amp; Indigenous Cow Welfare">Gaushala &amp; Indigenous Cow Welfare</option>
-              <option value="Samteling Mandap &amp; Shikhara Renovation">Samteling Mandap &amp; Shikhara Renovation</option>
-              <option value="Vedic Gurukul &amp; Sanskrit Education">Vedic Gurukul &amp; Sanskrit Education</option>
-              <option value="General Temple Maintenance">General Temple Maintenance</option>
-            </select>
-          </div>
-
-          <div style="margin-bottom: 14px;">
-            <label style="display:block; font-size:0.82rem; font-weight:700; color:#334155; margin-bottom:6px;">Select Amount (Bhutan Ngultrum Nu.)</label>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;">
-              <button type="button" class="amount-pill" onclick="selectAmount(501)">Nu. 501</button>
-              <button type="button" class="amount-pill" onclick="selectAmount(1101)">Nu. 1,101</button>
-              <button type="button" class="amount-pill active" onclick="selectAmount(2101)">Nu. 2,101</button>
-              <button type="button" class="amount-pill" onclick="selectAmount(5001)">Nu. 5,001</button>
-              <button type="button" class="amount-pill" onclick="selectAmount(11000)">Nu. 11,000</button>
-            </div>
-            <input type="number" id="customAmountInput" class="form-field-input" value="2101" min="100" style="padding:10px 12px; width:100%;" required>
-          </div>
-
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
-            <div>
-              <label style="display:block; font-size:0.82rem; font-weight:700; color:#334155; margin-bottom:6px;">Devotee Full Name</label>
-              <input type="text" id="donorNameInput" class="form-field-input" placeholder="e.g. Karma Sharma" style="padding:10px 12px; width:100%;" required>
-            </div>
-            <div>
-              <label style="display:block; font-size:0.82rem; font-weight:700; color:#334155; margin-bottom:6px;">Gotra / Family Lineage (Optional)</label>
-              <input type="text" id="donorGotraInput" class="form-field-input" placeholder="e.g. Kashyapa / Bharadwaja" style="padding:10px 12px; width:100%;">
-            </div>
-          </div>
-
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px;">
-            <div>
-              <label style="display:block; font-size:0.82rem; font-weight:700; color:#334155; margin-bottom:6px;">Phone / WhatsApp</label>
-              <input type="tel" id="donorPhoneInput" class="form-field-input" placeholder="+975 17 000000" style="padding:10px 12px; width:100%;" required>
-            </div>
-            <div>
-              <label style="display:block; font-size:0.82rem; font-weight:700; color:#334155; margin-bottom:6px;">City / Dzongkhag</label>
-              <input type="text" id="donorCityInput" class="form-field-input" placeholder="Thimphu" style="padding:10px 12px; width:100%;" required>
-            </div>
-          </div>
-
-          <button type="submit" class="btn-donate-saffron" style="width: 100%; justify-content: center; padding: 14px; font-size: 1rem;">
-            <span>🕉️ Make Sacred Offering &amp; Get Official E-Receipt</span>
-          </button>
-        </form>
-
-        <div id="instantReceiptBox" style="display:none; margin-top:24px; padding:20px; border:2px dashed #16a34a; background:#f0fdf4; border-radius:10px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-            <span style="font-weight:900; color:#166534; font-size:1.1rem;">Official Tax-Exempt E-Receipt</span>
-            <span style="font-size:0.75rem; background:#bbf7d0; color:#14532d; padding:2px 8px; border-radius:4px; font-weight:700;" id="receiptNumberText">BHDS-2025-0891</span>
-          </div>
-          <div style="font-size:0.85rem; color:#15803d; line-height:1.6;" id="receiptBodyDetails"></div>
-          <button type="button" onclick="window.print()" style="margin-top:14px; background:#166534; color:#fff; border:none; padding:8px 18px; border-radius:6px; font-weight:700; cursor:pointer;">
-            🖨️ Print / Save Receipt PDF
-          </button>
-        </div>
+      <div class="subpage-temple-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Seva &amp; Donations</span>
       </div>
     </div>
   </section>
 
-  <!-- MAIN FOOTER - EXACT DESIGN MATCH -->
-  <footer class="temple-main-footer" id="contact">
+  <!-- 3 CAUSE CARDS WITH PROGRESS BARS -->
+  <section style="padding: 45px 0 60px; background: #ffffff;">
     <div class="container">
-      <div class="temple-footer-top-grid">
-        <div class="footer-temple-brand">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="assets/om-crest.jpg" alt="Om Seal" class="footer-om-seal">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 30px;">
+        <span class="subpage-temple-tagline" style="color: #d97706;">Sacred Causes</span>
+        <h2 style="font-size: 1.85rem; font-weight: 900; color: #6b1414; margin-top: 6px;">Choose Your Seva Offering</h2>
+        <p style="font-size: 0.88rem; color: #64748b; margin-top: 6px;">Every donation is acknowledged with an official tax-exempt digital blessing receipt.</p>
+      </div>
+
+      <div class="cause-cards-grid">
+        <!-- Cause 1 -->
+        <article class="cause-card-box">
+          <div class="cause-photo-frame">
+            <img src="assets/news-1.jpg" alt="Samteling Temple Renovation">
+          </div>
+          <div class="cause-card-content">
+            <h3 class="cause-card-title">Temple Renovation &amp; Sanctum Expansion</h3>
+            <p class="cause-card-desc">
+              Restoration of traditional stone carvings, golden kalash installation, and construction of the new devotee meditation mandap at Samteling.
+            </p>
+            <div class="cause-progress-bar-bg">
+              <div class="cause-progress-bar-fill" style="width: 72%;"></div>
+            </div>
+            <div class="cause-stats-split">
+              <span>Raised: <strong>Nu. 1,800,000</strong></span>
+              <span>Goal: Nu. 2,500,000 (72%)</span>
+            </div>
+            <button type="button" class="btn-donate-saffron" style="width: 100%; justify-content: center; padding: 10px;" onclick="selectCauseAndScroll('Samteling Temple Renovation')">
+              Contribute to Renovation
+            </button>
+          </div>
+        </article>
+
+        <!-- Cause 2 -->
+        <article class="cause-card-box">
+          <div class="cause-photo-frame">
+            <img src="assets/devotees-namaste.jpg" alt="Annadanam Free Food Seva">
+          </div>
+          <div class="cause-card-content">
+            <h3 class="cause-card-title">Daily Annadanam (Maha Prasadam)</h3>
+            <p class="cause-card-desc">
+              Serving pure sattvic meals daily to hundreds of visiting pilgrims, monks, sadhus, and underprivileged families across Thimphu valley.
+            </p>
+            <div class="cause-progress-bar-bg">
+              <div class="cause-progress-bar-fill" style="width: 80%;"></div>
+            </div>
+            <div class="cause-stats-split">
+              <span>Raised: <strong>Nu. 640,000</strong></span>
+              <span>Goal: Nu. 800,000 (80%)</span>
+            </div>
+            <button type="button" class="btn-donate-saffron" style="width: 100%; justify-content: center; padding: 10px;" onclick="selectCauseAndScroll('Annadanam (Free Prasadam Food)')">
+              Sponsor Daily Prasadam
+            </button>
+          </div>
+        </article>
+
+        <!-- Cause 3 -->
+        <article class="cause-card-box">
+          <div class="cause-photo-frame">
+            <img src="assets/news-4.jpg" alt="Gaushala Cow Care">
+          </div>
+          <div class="cause-card-content">
+            <h3 class="cause-card-title">Gaushala &amp; Sacred Cow Sanctuary</h3>
+            <p class="cause-card-desc">
+              Providing fodder, clean shelter, and compassionate veterinary care for abandoned, elderly and rescued cows in our Thimphu gaushala.
+            </p>
+            <div class="cause-progress-bar-bg">
+              <div class="cause-progress-bar-fill" style="width: 78%;"></div>
+            </div>
+            <div class="cause-stats-split">
+              <span>Raised: <strong>Nu. 390,000</strong></span>
+              <span>Goal: Nu. 500,000 (78%)</span>
+            </div>
+            <button type="button" class="btn-donate-saffron" style="width: 100%; justify-content: center; padding: 10px;" onclick="selectCauseAndScroll('Gaushala &amp; Cow Welfare')">
+              Support Gaushala Seva
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- INTERACTIVE DONATION FORM & DIGITAL RECEIPT SPLIT -->
+      <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 30px; margin-top: 20px;" id="donationFormSection">
+        <!-- Donation Panel -->
+        <div style="background: #fffbeb; border: 1px solid #fed7aa; border-radius: 8px; padding: 32px; box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
+          <h3 style="font-size: 1.35rem; font-weight: 900; color: #6b1414; margin-bottom: 6px;">Enter Sankalpa &amp; Donation Details</h3>
+          <p style="font-size: 0.84rem; color: #64748b; margin-bottom: 18px;">
+            Choose a preset dakshina amount or enter your custom offering in Bhutanese Ngultrum (Nu.).
+          </p>
+
+          <form id="standaloneDonationForm" onsubmit="generateBlessingReceipt(event)">
+            <!-- Cause Dropdown -->
+            <div style="margin-bottom: 14px;">
+              <label style="font-size: 0.8rem; font-weight: 700; color: #334155; display: block; margin-bottom: 4px;">Selected Seva Cause</label>
+              <select id="mainFormCause" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.88rem;" required>
+                <option value="Samteling Temple Renovation">Samteling Temple Renovation &amp; Sanctum</option>
+                <option value="Annadanam (Free Prasadam Food)">Annadanam (Daily Free Food Distribution)</option>
+                <option value="Gaushala &amp; Cow Welfare">Gaushala &amp; Sacred Cow Sanctuary</option>
+                <option value="Daily Aarti &amp; Priest Welfare">Daily Aarti, Deepam &amp; Priest Dakshina</option>
+                <option value="Youth Vedic Education">Youth Vedic Culture &amp; Sanskrit Classes</option>
+              </select>
+            </div>
+
+            <!-- Amount Presets -->
+            <label style="font-size: 0.8rem; font-weight: 700; color: #334155; display: block; margin-bottom: 4px;">Dakshina Offering (Nu.)</label>
+            <div class="donation-preset-row">
+              <button type="button" class="preset-amount-pill" onclick="setDonationAmt(251, this)">Nu. 251</button>
+              <button type="button" class="preset-amount-pill active" onclick="setDonationAmt(501, this)">Nu. 501</button>
+              <button type="button" class="preset-amount-pill" onclick="setDonationAmt(1100, this)">Nu. 1,100</button>
+              <button type="button" class="preset-amount-pill" onclick="setDonationAmt(2100, this)">Nu. 2,100</button>
+              <button type="button" class="preset-amount-pill" onclick="setDonationAmt(5100, this)">Nu. 5,100</button>
+              <button type="button" class="preset-amount-pill" onclick="setDonationAmt(11000, this)">Nu. 11,000</button>
+            </div>
+
+            <div style="margin-bottom: 14px;">
+              <input type="number" id="mainFormAmt" value="501" placeholder="Custom Amount in Nu." style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.95rem; font-weight: 700;" required>
+            </div>
+
+            <!-- Devotee Details -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+              <input type="text" id="devoteeFullName" placeholder="Yajman / Devotee Name" style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.85rem;" required>
+              <input type="text" id="devoteeGotra" placeholder="Gotra (Optional)" style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.85rem;">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+              <input type="tel" id="devoteePhone" placeholder="Mobile / M-BoB Phone #" style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.85rem;" required>
+              <input type="email" id="devoteeEmail" placeholder="Email (for e-Receipt)" style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.85rem;" required>
+            </div>
+
+            <button type="submit" style="width: 100%; background: #8b1e1e; color: #fff; border: none; padding: 12px; border-radius: 4px; font-weight: 800; font-size: 1rem; cursor: pointer;">
+              🕉️ Generate Digital Blessing Receipt
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Digital Receipt Preview -->
+        <div style="background: #ffffff; border: 2px dashed #f59e0b; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; justify-content: center; position: relative;">
+          <div style="text-align: center; border-bottom: 1px solid #fde68a; padding-bottom: 14px; margin-bottom: 14px;">
+            <div style="font-size: 1.5rem; color: #d97706;">☸️ 🕉️ ☸️</div>
+            <h4 style="font-size: 1.1rem; font-weight: 900; color: #6b1414; margin-top: 4px;">Bhutan Hindu Dharma Sabha</h4>
+            <div style="font-size: 0.72rem; color: #64748b;">Samteling Temple, Thimphu, Kingdom of Bhutan</div>
+            <div style="font-size: 0.76rem; font-weight: 800; color: #16a34a; margin-top: 4px;">Official Seva Blessing Receipt</div>
+          </div>
+
+          <div id="receiptBody">
+            <table style="width: 100%; font-size: 0.84rem; line-height: 1.8; color: #334155;">
+              <tbody>
+                <tr>
+                  <td>Receipt Number:</td>
+                  <td style="text-align: right; font-weight: 800; color: #6b1414;">BHDS-2026-9481</td>
+                </tr>
+                <tr>
+                  <td>Devotee Name:</td>
+                  <td style="text-align: right; font-weight: 700;" id="rcptName">Karma Sharma</td>
+                </tr>
+                <tr>
+                  <td>Gotra:</td>
+                  <td style="text-align: right;" id="rcptGotra">Kashyap</td>
+                </tr>
+                <tr>
+                  <td>Seva Cause:</td>
+                  <td style="text-align: right; font-weight: 700; color: #d97706;" id="rcptCause">Temple Renovation</td>
+                </tr>
+                <tr>
+                  <td>Donation Amount:</td>
+                  <td style="text-align: right; font-weight: 900; font-size: 1.1rem; color: #071727;" id="rcptAmt">Nu. 501.00</td>
+                </tr>
+                <tr>
+                  <td>Payment Status:</td>
+                  <td style="text-align: right; color: #16a34a; font-weight: 800;">✓ Verified Holy Sankalpa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top: 20px; text-align: center; background: #fffbeb; padding: 10px; border-radius: 4px; font-size: 0.75rem; color: #78350f;">
+            “सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः”<br>
+            May the supreme divine shower eternal peace and happiness upon your family.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOGETHER IN FAITH FOOTER BANNER (EXACT AS HOMEPAGE) -->
+  <section class="together-banner-section">
+    <div class="container">
+      <div class="together-banner-flex">
+        <div class="together-slogan-left">
+          <div class="slogan-line-1">Together in Faith</div>
+          <div class="slogan-line-2">Stronger in Community</div>
+          <div style="margin-top:8px; font-size:1.1rem; color:#facc15;">☸️</div>
+        </div>
+
+        <div class="our-services-gold-box">
+          <h4 class="services-gold-title">Our Sacred Services</h4>
+          <div class="services-two-cols-list">
+            <div class="service-check-item"><span>🛕</span><span>Pujas &amp; Rituals</span></div>
+            <div class="service-check-item"><span>🎭</span><span>Cultural Programs</span></div>
+            <div class="service-check-item"><span>🪔</span><span>Seva &amp; Donations</span></div>
+            <div class="service-check-item"><span>📚</span><span>Youth Activities</span></div>
+            <div class="service-check-item"><span>🏥</span><span>Education &amp; Welfare</span></div>
+            <div class="service-check-item"><span>🤝</span><span>Community Outreach</span></div>
+          </div>
+        </div>
+
+        <div class="stupa-mantra-right">
+          <div class="tibetan-mantra-text">Om Mani Padme Hum</div>
+          <div style="font-size:1.5rem; color:#facc15;">🕉️</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="temple-main-footer">
+    <div class="container">
+      <div class="temple-footer-grid-row">
+        <div>
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+            <img src="assets/footer-om.jpg" alt="Bhutan Hindu Dharma Logo" style="height:36px; border-radius:50%;">
             <div>
-              <div class="footer-sabha-title">Bhutan Hindu Dharma Sabha</div>
-              <div class="footer-sabha-sub">&amp; Thimphu Hindu Temple (Samteling)</div>
+              <div style="font-weight:800; font-size:0.95rem; color:#fff;">Bhutan Hindu Dharma Sabha</div>
+              <div style="font-size:0.75rem; color:#f59e0b;">&amp; Thimphu Hindu Temple (Samteling)</div>
             </div>
           </div>
-          <div class="footer-four-pillars">Faith &bull; Culture &bull; Service &bull; Unity</div>
+          <p style="font-size:0.78rem; color:#94a3b8; line-height:1.5;">
+            Faith &bull; Culture &bull; Service &bull; Unity. Preserving ancient Sanatan heritage and communal harmony in the Kingdom of Bhutan.
+          </p>
         </div>
 
         <div>
-          <h4 class="footer-links-heading">Quick Links</h4>
-          <ul class="footer-nav-list">
+          <h4 class="temple-footer-heading">Quick Links</h4>
+          <ul class="temple-footer-nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="pujas.html">Temple</a></li>
+            <li><a href="about.html">About Sabha</a></li>
+            <li><a href="pujas.html">Temple Pujas</a></li>
             <li><a href="events.html">Events &amp; Festivals</a></li>
             <li><a href="donate.html">Seva &amp; Donations</a></li>
-            <li><a href="index.html#gallery">Gallery</a></li>
-            <li><a href="index.html#news">News &amp; Updates</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-links-heading">Contact Us</h4>
-          <div class="footer-contact-item">
-            <span>📍</span>
-            <span>Samteling, Thimphu, Bhutan</span>
-          </div>
-          <div class="footer-contact-item">
-            <span>📞</span>
-            <span>+975 2 3311 123</span>
-          </div>
-          <div class="footer-contact-item">
-            <span>✉️</span>
-            <span>info@bhutanhindudharma.com</span>
-          </div>
-          <div class="footer-contact-item">
-            <span>🌐</span>
-            <span>www.bhutanhindudharma.com</span>
-          </div>
+          <h4 class="temple-footer-heading">Contact Us</h4>
+          <ul class="temple-footer-nav-list">
+            <li>📍 Samteling, Thimphu, Bhutan</li>
+            <li>📞 +975 2 3311 123</li>
+            <li>✉️ info@bhutanhindudharma.com</li>
+            <li>🌐 www.bhutanhindudharma.com</li>
+          </ul>
         </div>
 
         <div>
-          <h4 class="footer-links-heading">Follow Us</h4>
-          <div class="temple-social-row">
+          <h4 class="temple-footer-heading">Follow Us</h4>
+          <div class="temple-social-row" style="margin-bottom:12px;">
             <a href="#" class="social-circle-temple fb"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
             <a href="#" class="social-circle-temple yt"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z"/></svg></a>
             <a href="#" class="social-circle-temple ig"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path></svg></a>
@@ -277,71 +372,46 @@
         </div>
       </div>
 
-      <div class="temple-footer-bottom">
-        <p>&copy; 2025 Bhutan Hindu Dharma Sabha &amp; Thimphu Hindu Temple (Samteling). All Rights Reserved.</p>
-        <p style="color:#f59e0b; font-size:0.75rem;">Designed with ❤️ in Bhutan</p>
+      <div class="temple-footer-bottom-bar">
+        &copy; 2025 Bhutan Hindu Dharma Sabha &amp; Thimphu Hindu Temple (Samteling). All Rights Reserved. Designed with ❤️ in Bhutan
       </div>
     </div>
   </footer>
 
-  <style>
-    .amount-pill {
-      padding: 6px 14px;
-      border-radius: 9999px;
-      border: 1px solid #cbd5e1;
-      background: #f8fafc;
-      color: #334155;
-      font-size: 0.85rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    .amount-pill:hover, .amount-pill.active {
-      background: #7f1d1d;
-      color: #ffffff;
-      border-color: #7f1d1d;
-    }
-  </style>
-
   <script src="js/main.js"></script>
   <script>
-    function selectAmount(amt) {
-      document.querySelectorAll('.amount-pill').forEach(btn => {
-        if (btn.innerText.includes(amt.toLocaleString())) {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
+    function setDonationAmt(amt, btn) {
+      document.getElementById('mainFormAmt').value = amt;
+      document.querySelectorAll('.preset-amount-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function selectCauseAndScroll(causeName) {
+      const sel = document.getElementById('mainFormCause');
+      if (sel) {
+        for (let i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].text.includes(causeName) || sel.options[i].value.includes(causeName)) {
+            sel.selectedIndex = i;
+            break;
+          }
         }
-      });
-      document.getElementById('customAmountInput').value = amt;
+      }
+      document.getElementById('donationFormSection').scrollIntoView({ behavior: 'smooth' });
     }
 
-    function setDonationCause(cause, amt) {
-      document.getElementById('donationCauseSelect').value = cause;
-      selectAmount(amt);
-      document.getElementById('publicDonationForm').scrollIntoView({behavior:'smooth'});
-    }
-
-    function generateInstantReceipt(e) {
+    function generateBlessingReceipt(e) {
       e.preventDefault();
-      const name = document.getElementById('donorNameInput').value;
-      const gotra = document.getElementById('donorGotraInput').value || 'Kashyapa';
-      const cause = document.getElementById('donationCauseSelect').value;
-      const amt = document.getElementById('customAmountInput').value;
-      const phone = document.getElementById('donorPhoneInput').value;
-      const rNum = 'BHDS-' + Math.floor(100000 + Math.random() * 900000);
+      const name = document.getElementById('devoteeFullName').value || 'Devotee';
+      const gotra = document.getElementById('devoteeGotra').value || 'Kashyap';
+      const amt = document.getElementById('mainFormAmt').value || '501';
+      const cause = document.getElementById('mainFormCause').value;
 
-      document.getElementById('receiptNumberText').innerText = rNum;
-      document.getElementById('receiptBodyDetails').innerHTML = `
-        <strong>Devotee:</strong> ${name} (Gotra: ${gotra})<br>
-        <strong>Seva Cause:</strong> ${cause}<br>
-        <strong>Amount Received:</strong> Nu. ${Number(amt).toLocaleString()} (Bhutan Ngultrum)<br>
-        <strong>Phone:</strong> ${phone} | <strong>Date:</strong> ${new Date().toLocaleDateString('en-GB')}<br>
-        <em>Blessed by the Trustees of Samteling Temple, Thimphu, Kingdom of Bhutan.</em>
-      `;
-      document.getElementById('instantReceiptBox').style.display = 'block';
-      document.getElementById('instantReceiptBox').scrollIntoView({behavior:'smooth'});
-      if (typeof playTempleBell === 'function') playTempleBell();
+      document.getElementById('rcptName').innerText = name;
+      document.getElementById('rcptGotra').innerText = gotra;
+      document.getElementById('rcptCause').innerText = cause;
+      document.getElementById('rcptAmt').innerText = 'Nu. ' + Number(amt).toLocaleString() + '.00';
+
+      alert(`🕉️ Dhanyavad ${name}! Your blessing receipt for Nu. ${amt} has been generated. May Lord Shiva & Mata Durga bless you!`);
     }
   </script>
 </body>

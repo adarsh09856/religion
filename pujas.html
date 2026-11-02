@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vedic Pujas &amp; Rituals Directory | Samteling Hindu Temple Thimphu</title>
-  <meta name="description" content="Book Vedic Pujas, Homams and Sanskar rites in Bhutan. Rudrabhishek, Vahan Puja, Satyanarayan Katha, Navagraha Shanti, Griha Pravesh by certified Hindu priests.">
+  <title>Book Sacred Pujas &amp; Seva | Bhutan Hindu Dharma Sabha</title>
+  <meta name="description" content="Book personal and family Vedic rituals, Rudrabhishek, Chandi Havan, Satyanarayan Katha and Vahan vehicle blessings at Samteling Temple in Thimphu.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
           <a href="#" onclick="alert('Register as Member')">Register</a>
         </div>
 
-        <button type="button" class="btn-donate-saffron" onclick="location.href='donate.html'">
+        <button type="button" class="btn-donate-saffron" data-open-modal="donate">
           <span>🕉️ Donate Now</span>
         </button>
       </div>
@@ -59,13 +59,15 @@
   <header class="temple-main-header">
     <div class="container temple-header-row">
       <div class="temple-brand-cluster">
-        <a href="index.html"><img src="assets/om-crest.jpg" alt="Om Medallion" class="om-crest-image" id="omCrestBtn" title="Click to ring temple bell"></a>
-        <div class="temple-text-titles">
-          <h1 class="temple-h1-name">Bhutan Hindu Dharma Sabha</h1>
-          <div class="temple-h1-sub">&amp; Thimphu Hindu Temple (Samteling)</div>
-          <div class="temple-motto-shloka">|| धर्मो रक्षति रक्षितः ||</div>
-          <div class="temple-four-pillars">Faith &nbsp;|&nbsp; Culture &nbsp;|&nbsp; Service &nbsp;|&nbsp; Unity</div>
-        </div>
+        <a href="index.html" style="display:flex; align-items:center; gap:16px;">
+          <img src="assets/om-crest.jpg" alt="Om Medallion" class="om-crest-image" title="Click to ring temple bell">
+          <div class="temple-text-titles">
+            <h1 class="temple-h1-name">Bhutan Hindu Dharma Sabha</h1>
+            <div class="temple-h1-sub">&amp; Thimphu Hindu Temple (Samteling)</div>
+            <div class="temple-motto-shloka">|| धर्मो रक्षति रक्षितः ||</div>
+            <div class="temple-four-pillars">Faith &nbsp;|&nbsp; Culture &nbsp;|&nbsp; Service &nbsp;|&nbsp; Unity</div>
+          </div>
+        </a>
       </div>
 
       <div class="endless-knot-icon">
@@ -74,186 +76,225 @@
     </div>
   </header>
 
-  <!-- NAVIGATION BAR -->
+  <!-- NAVIGATION RIBBON -->
   <nav class="temple-nav-ribbon" aria-label="Main Sanctuary Navigation">
     <div class="container">
       <ul class="temple-nav-list">
         <li class="temple-nav-item"><a href="index.html">Home</a></li>
-        <li class="temple-nav-item"><a href="index.html#about">About Us ▾</a></li>
+        <li class="temple-nav-item"><a href="about.html">About Us ▾</a></li>
         <li class="temple-nav-item active"><a href="pujas.html">Temple ▾</a></li>
         <li class="temple-nav-item"><a href="events.html">Events &amp; Festivals ▾</a></li>
         <li class="temple-nav-item"><a href="donate.html">Seva &amp; Donations ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#gallery">Gallery ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#news">News &amp; Updates ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#community">Community ▾</a></li>
-        <li class="temple-nav-item"><a href="index.html#contact">Contact Us</a></li>
+        <li class="temple-nav-item"><a href="gallery.html">Gallery ▾</a></li>
+        <li class="temple-nav-item"><a href="events.html">News &amp; Updates ▾</a></li>
+        <li class="temple-nav-item"><a href="about.html">Community ▾</a></li>
+        <li class="temple-nav-item"><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section style="background: linear-gradient(135deg, #7f1d1d 0%, #071727 70%, #0d2847 100%); color: #fff; padding: 48px 0; border-bottom: 3px solid #f59e0b; text-align: center;">
+  <!-- SUBPAGE HERO BANNER -->
+  <section class="subpage-temple-hero">
     <div class="container">
-      <span style="font-size:0.85rem; font-weight:800; color:#f59e0b; letter-spacing:1.5px; text-transform:uppercase;">|| ॐ तत्सत् परब्रह्मणे नमः ||</span>
-      <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 900; margin: 6px 0 10px;">Vedic Pujas, Homams &amp; Sanskars</h1>
-      <p style="color: #cbd5e1; max-width: 680px; margin: 0 auto; font-size: 0.95rem;">
-        Conducted strictly according to Vedic Shastras by accredited Hindu priests at the Samteling Temple Sanctum or at your private residence in Bhutan.
+      <span class="subpage-temple-tagline">|| ॐ तत्सत् परब्रह्मणे नमः ||</span>
+      <h1 class="subpage-temple-title">Vedic Pujas, Havans &amp; Sacred Rituals</h1>
+      <p class="subpage-temple-desc">
+        Perform time-tested Vedic rituals conducted by qualified Sanskrit scholars and ordained temple priests. Book in-temple sankalpa or home visits across Thimphu valley.
       </p>
-    </div>
-  </section>
-
-  <!-- PUJA CATALOG GRID -->
-  <section style="background: #fdfbf7; padding: 45px 0 60px;">
-    <div class="container">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:28px; flex-wrap:wrap; gap:12px;">
-        <div>
-          <h2 style="font-size: 1.6rem; font-weight: 900; color: #7f1d1d; margin: 0;">Sacred Puja Directory</h2>
-          <span style="font-size: 0.88rem; color: #64748b;">All samagri (holy ritual ingredients) arranged by Samteling Temple Seva committee</span>
-        </div>
-        <button type="button" class="btn-donate-saffron" onclick="openPujaModal('General Vedic Puja Consultation')">
-          <span>📅 Schedule Custom Puja</span>
-        </button>
-      </div>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
-        <!-- Puja 1: Maha Rudrabhishek -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 24px; border: 1px solid #fed7aa;">
-          <div style="font-size: 2.2rem; margin-bottom: 6px;">🔱</div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #7f1d1d; margin-bottom: 6px;">Maha Rudrabhishek with Namakam &amp; Chamakam</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 14px; flex-grow: 1;">
-            Holy bath of the sacred Shiva Lingam with 11 holy substances (milk, curd, honey, ghee, sugarcane, gangajal, bilva leaves) accompanied by Sri Rudram Vedic recitations for health and liberation.
-          </p>
-          <div style="font-size: 0.9rem; font-weight: 800; color: #071727; margin-bottom: 12px;">Duration: 2.5 Hours &bull; Dakshina: <span style="color:#d97706;">Nu. 2,100</span></div>
-          <button type="button" class="btn-know-more" style="width: 100%; justify-content: center;" onclick="openPujaModal('Maha Rudrabhishek with Namakam & Chamakam')">
-            <span>Book Rudrabhishek</span>
-            <span>&rarr;</span>
-          </button>
-        </article>
-
-        <!-- Puja 2: Vahan Puja -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 24px; border: 1px solid #fed7aa;">
-          <div style="font-size: 2.2rem; margin-bottom: 6px;">🚗</div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #7f1d1d; margin-bottom: 6px;">Vahan Puja (Vehicle Consecration Blessing)</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 14px; flex-grow: 1;">
-            Consecration for cars, Hilux 4x4s, taxis and heavy trucks for safe mountain journeys across Dochula, Chelela, and Thimphu highways with coconut breaking and Raksha Sutra tying.
-          </p>
-          <div style="font-size: 0.9rem; font-weight: 800; color: #071727; margin-bottom: 12px;">Duration: 30 Mins &bull; Dakshina: <span style="color:#d97706;">Nu. 501</span></div>
-          <button type="button" class="btn-know-more" style="width: 100%; justify-content: center;" onclick="openPujaModal('Vahan Puja (Vehicle Blessing)')">
-            <span>Book Vehicle Blessing</span>
-            <span>&rarr;</span>
-          </button>
-        </article>
-
-        <!-- Puja 3: Satyanarayan Vrat Katha -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 24px; border: 1px solid #fed7aa;">
-          <div style="font-size: 2.2rem; margin-bottom: 6px;">📖</div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #7f1d1d; margin-bottom: 6px;">Shri Satyanarayan Vrat Katha &amp; Havan</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 14px; flex-grow: 1;">
-            Auspicious full moon (Purnima) or house blessing ritual reciting Lord Vishnu's divine glory. Concludes with Panchamrit preparation and pure ghee Havan fire ritual.
-          </p>
-          <div style="font-size: 0.9rem; font-weight: 800; color: #071727; margin-bottom: 12px;">Duration: 2 Hours &bull; Dakshina: <span style="color:#d97706;">Nu. 1,501</span></div>
-          <button type="button" class="btn-know-more" style="width: 100%; justify-content: center;" onclick="openPujaModal('Shri Satyanarayan Vrat Katha')">
-            <span>Book Satyanarayan Katha</span>
-            <span>&rarr;</span>
-          </button>
-        </article>
-
-        <!-- Puja 4: Durga Saptashati & Chandi Path -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 24px; border: 1px solid #fed7aa;">
-          <div style="font-size: 2.2rem; margin-bottom: 6px;">🛡️</div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #7f1d1d; margin-bottom: 6px;">Durga Saptashati &amp; Chandi Havan</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 14px; flex-grow: 1;">
-            Potent 700-verse recitation invoking Goddess Mahadurga for overcoming insurmountable obstacles, legal victory, warding off negative energies, and granting spiritual courage.
-          </p>
-          <div style="font-size: 0.9rem; font-weight: 800; color: #071727; margin-bottom: 12px;">Duration: 4 Hours &bull; Dakshina: <span style="color:#d97706;">Nu. 3,501</span></div>
-          <button type="button" class="btn-know-more" style="width: 100%; justify-content: center;" onclick="openPujaModal('Durga Saptashati & Chandi Havan')">
-            <span>Book Chandi Path</span>
-            <span>&rarr;</span>
-          </button>
-        </article>
-
-        <!-- Puja 5: Navagraha Shanti Havan -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 24px; border: 1px solid #fed7aa;">
-          <div style="font-size: 2.2rem; margin-bottom: 6px;">🪐</div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #7f1d1d; margin-bottom: 6px;">Navagraha Shanti &amp; Dosha Nivarana</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 14px; flex-grow: 1;">
-            Pacification of 9 planetary deities (Surya, Chandra, Mangala, Budha, Guru, Shukra, Shani, Rahu, Ketu) with designated samidha woods, grains, and Vedic mantra ahutis.
-          </p>
-          <div style="font-size: 0.9rem; font-weight: 800; color: #071727; margin-bottom: 12px;">Duration: 3 Hours &bull; Dakshina: <span style="color:#d97706;">Nu. 2,501</span></div>
-          <button type="button" class="btn-know-more" style="width: 100%; justify-content: center;" onclick="openPujaModal('Navagraha Shanti Havan')">
-            <span>Book Navagraha Havan</span>
-            <span>&rarr;</span>
-          </button>
-        </article>
-
-        <!-- Puja 6: Griha Pravesh & Vastu Shanti -->
-        <article class="temple-quick-card" style="text-align: left; align-items: flex-start; padding: 24px; border: 1px solid #fed7aa;">
-          <div style="font-size: 2.2rem; margin-bottom: 6px;">🏡</div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #7f1d1d; margin-bottom: 6px;">Griha Pravesh &amp; Vastu Shanti</h3>
-          <p style="font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 14px; flex-grow: 1;">
-            Housewarming ritual for new apartments or residences across Thimphu and Paro. Includes Gau Puja, milk boiling ceremony, Vastu Purusha invocation, and threshold Raksha.
-          </p>
-          <div style="font-size: 0.9rem; font-weight: 800; color: #071727; margin-bottom: 12px;">Duration: 3.5 Hours &bull; Dakshina: <span style="color:#d97706;">Nu. 3,101</span></div>
-          <button type="button" class="btn-know-more" style="width: 100%; justify-content: center;" onclick="openPujaModal('Griha Pravesh & Vastu Shanti')">
-            <span>Book Griha Pravesh</span>
-            <span>&rarr;</span>
-          </button>
-        </article>
+      <div class="subpage-temple-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Temple Pujas &amp; Seva</span>
       </div>
     </div>
   </section>
 
-  <!-- MAIN FOOTER - EXACT DESIGN MATCH -->
-  <footer class="temple-main-footer" id="contact">
+  <!-- 6 PUJA OFFERINGS GRID -->
+  <section style="padding: 50px 0 60px; background: #ffffff;">
     <div class="container">
-      <div class="temple-footer-top-grid">
-        <div class="footer-temple-brand">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="assets/om-crest.jpg" alt="Om Seal" class="footer-om-seal">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 30px;">
+        <span class="subpage-temple-tagline" style="color: #d97706;">Vedic Offerings</span>
+        <h2 style="font-size: 1.85rem; font-weight: 900; color: #6b1414; margin-top: 6px;">Available Temple Rituals</h2>
+        <p style="font-size: 0.88rem; color: #64748b; margin-top: 6px;">Samagri, sacred flowers, gangajal and pure ghee are provided by the temple.</p>
+      </div>
+
+      <div class="pujas-catalog-grid">
+        <!-- 1. Maha Rudrabhishek -->
+        <article class="puja-card-tile">
+          <div class="puja-deity-symbol">🔱</div>
+          <h3 class="puja-tile-title">Maha Rudrabhishek</h3>
+          <div class="puja-tile-dakshina">Dakshina: Nu. 2,100</div>
+          <p class="puja-tile-desc">
+            Sacred Vedic bathing of Bhagwan Shiva with panchamrit, sugarcane juice, honey and continuous chanting of the powerful Sri Rudram Namakam and Chamakam.
+          </p>
+          <button type="button" class="btn-donate-saffron" style="justify-content:center; width:100%;" onclick="openPujaModalWithName('Maha Rudrabhishek (Nu. 2,100)')">
+            Book Rudrabhishek
+          </button>
+        </article>
+
+        <!-- 2. Maa Durga Chandi Havan -->
+        <article class="puja-card-tile">
+          <div class="puja-deity-symbol">🦁</div>
+          <h3 class="puja-tile-title">Maa Durga Chandi Havan</h3>
+          <div class="puja-tile-dakshina">Dakshina: Nu. 3,500</div>
+          <p class="puja-tile-desc">
+            Grand sacrificial fire ritual invoking Maa Durga's supreme blessings for overcoming legal challenges, negative energies, disease and family protection.
+          </p>
+          <button type="button" class="btn-donate-saffron" style="justify-content:center; width:100%;" onclick="openPujaModalWithName('Maa Durga Chandi Havan (Nu. 3,500)')">
+            Book Chandi Havan
+          </button>
+        </article>
+
+        <!-- 3. Shri Satyanarayan Katha -->
+        <article class="puja-card-tile">
+          <div class="puja-deity-symbol">🪷</div>
+          <h3 class="puja-tile-title">Shri Satyanarayan Vrat Katha</h3>
+          <div class="puja-tile-dakshina">Dakshina: Nu. 1,500</div>
+          <p class="puja-tile-desc">
+            Traditional Purnima katha recitation invoking Lord Vishnu for peace, harmonious family relations, auspicious beginnings and prosperous homesteads.
+          </p>
+          <button type="button" class="btn-donate-saffron" style="justify-content:center; width:100%;" onclick="openPujaModalWithName('Shri Satyanarayan Katha (Nu. 1,500)')">
+            Book Satyanarayan Katha
+          </button>
+        </article>
+
+        <!-- 4. Navgraha Shanti Havan -->
+        <article class="puja-card-tile">
+          <div class="puja-deity-symbol">☀️</div>
+          <h3 class="puja-tile-title">Navgraha Shanti &amp; Dosha Nivaran</h3>
+          <div class="puja-tile-dakshina">Dakshina: Nu. 2,500</div>
+          <p class="puja-tile-desc">
+            Pacification of the nine celestial planetary deities with specific samidha woods, planetary mantras, and colored cloth offerings according to your Janam Kundali.
+          </p>
+          <button type="button" class="btn-donate-saffron" style="justify-content:center; width:100%;" onclick="openPujaModalWithName('Navgraha Shanti (Nu. 2,500)')">
+            Book Navgraha Puja
+          </button>
+        </article>
+
+        <!-- 5. Vehicle / Vahan Puja -->
+        <article class="puja-card-tile">
+          <div class="puja-deity-symbol">🚗</div>
+          <h3 class="puja-tile-title">Vehicle / Vahan Blessing Puja</h3>
+          <div class="puja-tile-dakshina">Dakshina: Nu. 501</div>
+          <p class="puja-tile-desc">
+            Consecration of new and commercial vehicles outside temple gates with Ganesha stotram, lemon tire crushing, swastika vermilion and safe journey raksha sutra.
+          </p>
+          <button type="button" class="btn-donate-saffron" style="justify-content:center; width:100%;" onclick="openPujaModalWithName('Vehicle / Vahan Puja (Nu. 501)')">
+            Book Vahan Puja
+          </button>
+        </article>
+
+        <!-- 6. Sundarkand Path -->
+        <article class="puja-card-tile">
+          <div class="puja-deity-symbol">🚩</div>
+          <h3 class="puja-tile-title">Sundarkand Path &amp; Hanuman Chalisa</h3>
+          <div class="puja-tile-dakshina">Dakshina: Nu. 1,100</div>
+          <p class="puja-tile-desc">
+            Complete rhythmic recitation of Valmiki / Tulsidas Sundarkand invoking Sankatmochan Hanuman for courage, mental strength and overcoming planetary afflictions.
+          </p>
+          <button type="button" class="btn-donate-saffron" style="justify-content:center; width:100%;" onclick="openPujaModalWithName('Sundarkand Path (Nu. 1,100)')">
+            Book Sundarkand Path
+          </button>
+        </article>
+      </div>
+
+      <!-- DARSHAN TIMINGS TABLE -->
+      <div style="margin-top: 50px;">
+        <div class="darshan-schedule-box">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
             <div>
-              <div class="footer-sabha-title">Bhutan Hindu Dharma Sabha</div>
-              <div class="footer-sabha-sub">&amp; Thimphu Hindu Temple (Samteling)</div>
+              <h3 style="font-size:1.25rem; font-weight:900; color:#6b1414;">Daily Darshan &amp; Aarti Timings (Samteling Sanctum)</h3>
+              <p style="font-size:0.82rem; color:#64748b;">Sanctum gates open every morning at 5:30 AM.</p>
+            </div>
+            <span style="font-size:0.75rem; font-weight:800; background:#f59e0b; color:#071727; padding:4px 12px; border-radius:20px;">
+              🔔 Open 365 Days
+            </span>
+          </div>
+
+          <table class="panchang-table" style="margin: 0;">
+            <thead>
+              <tr>
+                <th>Aarti &amp; Ritual</th>
+                <th>Morning / Evening</th>
+                <th>Time (Bhutan Time)</th>
+                <th>Significance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Mangala Aarti</strong></td>
+                <td>Morning</td>
+                <td>06:00 AM &ndash; 06:30 AM</td>
+                <td>First awakening darshan of deities with conch &amp; bells</td>
+              </tr>
+              <tr>
+                <td><strong>Madhyahna Bhog</strong></td>
+                <td>Afternoon</td>
+                <td>12:00 PM &ndash; 12:30 PM</td>
+                <td>Sacred food offering followed by brief sanctum rest</td>
+              </tr>
+              <tr>
+                <td><strong>Sandhya Aarti</strong></td>
+                <td>Evening</td>
+                <td>06:30 PM &ndash; 07:15 PM</td>
+                <td>Grand lamp offering, live dholak kirtan &amp; holy charanamrit</td>
+              </tr>
+              <tr>
+                <td><strong>Shayan Aarti</strong></td>
+                <td>Night</td>
+                <td>08:30 PM &ndash; 08:45 PM</td>
+                <td>Closing prayer and sanctum slumber curtain</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="temple-main-footer">
+    <div class="container">
+      <div class="temple-footer-grid-row">
+        <div>
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+            <img src="assets/footer-om.jpg" alt="Bhutan Hindu Dharma Logo" style="height:36px; border-radius:50%;">
+            <div>
+              <div style="font-weight:800; font-size:0.95rem; color:#fff;">Bhutan Hindu Dharma Sabha</div>
+              <div style="font-size:0.75rem; color:#f59e0b;">&amp; Thimphu Hindu Temple (Samteling)</div>
             </div>
           </div>
-          <div class="footer-four-pillars">Faith &bull; Culture &bull; Service &bull; Unity</div>
+          <p style="font-size:0.78rem; color:#94a3b8; line-height:1.5;">
+            Faith &bull; Culture &bull; Service &bull; Unity. Preserving ancient Sanatan heritage and communal harmony in the Kingdom of Bhutan.
+          </p>
         </div>
 
         <div>
-          <h4 class="footer-links-heading">Quick Links</h4>
-          <ul class="footer-nav-list">
+          <h4 class="temple-footer-heading">Quick Links</h4>
+          <ul class="temple-footer-nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="pujas.html">Temple</a></li>
+            <li><a href="about.html">About Sabha</a></li>
+            <li><a href="pujas.html">Temple Pujas</a></li>
             <li><a href="events.html">Events &amp; Festivals</a></li>
             <li><a href="donate.html">Seva &amp; Donations</a></li>
-            <li><a href="index.html#gallery">Gallery</a></li>
-            <li><a href="index.html#news">News &amp; Updates</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-links-heading">Contact Us</h4>
-          <div class="footer-contact-item">
-            <span>📍</span>
-            <span>Samteling, Thimphu, Bhutan</span>
-          </div>
-          <div class="footer-contact-item">
-            <span>📞</span>
-            <span>+975 2 3311 123</span>
-          </div>
-          <div class="footer-contact-item">
-            <span>✉️</span>
-            <span>info@bhutanhindudharma.com</span>
-          </div>
-          <div class="footer-contact-item">
-            <span>🌐</span>
-            <span>www.bhutanhindudharma.com</span>
-          </div>
+          <h4 class="temple-footer-heading">Contact Us</h4>
+          <ul class="temple-footer-nav-list">
+            <li>📍 Samteling, Thimphu, Bhutan</li>
+            <li>📞 +975 2 3311 123</li>
+            <li>✉️ info@bhutanhindudharma.com</li>
+            <li>🌐 www.bhutanhindudharma.com</li>
+          </ul>
         </div>
 
         <div>
-          <h4 class="footer-links-heading">Follow Us</h4>
-          <div class="temple-social-row">
+          <h4 class="temple-footer-heading">Follow Us</h4>
+          <div class="temple-social-row" style="margin-bottom:12px;">
             <a href="#" class="social-circle-temple fb"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
             <a href="#" class="social-circle-temple yt"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z"/></svg></a>
             <a href="#" class="social-circle-temple ig"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path></svg></a>
@@ -261,41 +302,55 @@
         </div>
       </div>
 
-      <div class="temple-footer-bottom">
-        <p>&copy; 2025 Bhutan Hindu Dharma Sabha &amp; Thimphu Hindu Temple (Samteling). All Rights Reserved.</p>
-        <p style="color:#f59e0b; font-size:0.75rem;">Designed with ❤️ in Bhutan</p>
+      <div class="temple-footer-bottom-bar">
+        &copy; 2025 Bhutan Hindu Dharma Sabha &amp; Thimphu Hindu Temple (Samteling). All Rights Reserved. Designed with ❤️ in Bhutan
       </div>
     </div>
   </footer>
 
-  <!-- NATIVE MODAL: PUJA BOOKING -->
-  <dialog id="pujaBookingModal" aria-labelledby="pujaModalTitle" style="padding:0; border:none; border-radius:14px; max-width:520px; width:90%; background:#fff; color:#0f172a; box-shadow:0 20px 40px rgba(0,0,0,0.3);">
-    <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; background:#7f1d1d; color:#fff;">
-      <span id="pujaModalTitle" style="font-weight:800; font-size:1rem;">Book Vedic Puja &amp; Acharya Seva</span>
-      <button type="button" onclick="document.getElementById('pujaBookingModal').close()" style="background:none; border:none; color:#fff; font-size:1.3rem; cursor:pointer;">✕</button>
+  <!-- NATIVE MODAL 2: PUJA BOOKING (EXACT FROM HOMEPAGE) -->
+  <dialog id="pujaModal" aria-labelledby="pujaModalTitle">
+    <div style="background:#8b1e1e; color:#fff; padding:14px 18px; display:flex; justify-content:space-between; align-items:center;">
+      <h3 id="pujaModalTitle" style="font-size:1rem; font-weight:800;">Book Temple Puja &amp; Ritual</h3>
+      <button type="button" data-close-modal="pujaModal" style="background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✕</button>
     </div>
-    <div style="padding:22px;">
-      <form onsubmit="event.preventDefault(); alert('Puja request received! The Head Priest of Samteling Temple will contact you to finalize the auspicious Muhurat.'); document.getElementById('pujaBookingModal').close();">
+    <div style="padding:20px;">
+      <form id="pujaBookingForm">
         <div style="margin-bottom:12px;">
-          <input type="text" id="selectedPujaInput" class="form-field-input" readonly style="background:#f8fafc; font-weight:700; width:100%; padding-left:12px;">
+          <input type="text" id="selectedPujaInput" placeholder="Selected Puja" style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:4px; font-weight:700;" readonly>
         </div>
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px;">
-          <input type="text" placeholder="Devotee Full Name" class="form-field-input" style="padding-left:12px; width:100%;" required>
-          <input type="tel" placeholder="Phone Number" class="form-field-input" style="padding-left:12px; width:100%;" required>
+          <input type="text" id="devoteeName" placeholder="Yajman Name" style="padding:8px; border:1px solid #cbd5e1; border-radius:4px;" required>
+          <input type="text" placeholder="Gotra" style="padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
         </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px;">
-          <input type="text" placeholder="Gotra (e.g. Bharadwaja)" class="form-field-input" style="padding-left:12px; width:100%;">
-          <input type="date" class="form-field-input" style="padding-left:12px; width:100%;" required>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;">
+          <input type="date" id="pujaDate" style="padding:8px; border:1px solid #cbd5e1; border-radius:4px;" required>
+          <input type="tel" placeholder="Mobile #" style="padding:8px; border:1px solid #cbd5e1; border-radius:4px;" required>
         </div>
-        <div style="margin-bottom:14px;">
-          <select class="form-field-select" style="padding-left:12px; width:100%;">
-            <option>At Samteling Temple (Thimphu)</option>
-            <option>At Private Residence in Thimphu</option>
-            <option>At Private Residence in Paro / Punakha</option>
-          </select>
+        <button type="submit" style="width:100%; background:#8b1e1e; color:#fff; padding:10px; border:none; border-radius:4px; font-weight:800; cursor:pointer;">
+          Confirm Puja Sankalpa
+        </button>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- NATIVE DONATION MODAL -->
+  <dialog id="donationModal" aria-labelledby="donationModalTitle">
+    <div style="background:#8b1e1e; color:#fff; padding:14px 18px; display:flex; justify-content:space-between; align-items:center;">
+      <h3 id="donationModalTitle" style="font-size:1rem; font-weight:800;">Online Temple Donation &amp; Seva</h3>
+      <button type="button" data-close-modal="donationModal" style="background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✕</button>
+    </div>
+    <div style="padding:20px;">
+      <form id="donationForm">
+        <div style="margin-bottom:12px;">
+          <input type="number" value="501" placeholder="Amount (Nu.)" style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:4px;" required>
         </div>
-        <button type="submit" class="btn-donate-saffron" style="width:100%; padding:12px; font-size:0.95rem; justify-content:center;">
-          Confirm Puja Booking Request
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;">
+          <input type="text" placeholder="Devotee Name" style="padding:8px; border:1px solid #cbd5e1; border-radius:4px;" required>
+          <input type="tel" placeholder="Phone Number" style="padding:8px; border:1px solid #cbd5e1; border-radius:4px;" required>
+        </div>
+        <button type="submit" style="width:100%; background:#d97706; color:#fff; padding:10px; border:none; border-radius:4px; font-weight:800; cursor:pointer;">
+          Submit Donation
         </button>
       </form>
     </div>
@@ -303,9 +358,10 @@
 
   <script src="js/main.js"></script>
   <script>
-    function openPujaModal(pujaName) {
-      document.getElementById('selectedPujaInput').value = pujaName;
-      document.getElementById('pujaBookingModal').showModal();
+    function openPujaModalWithName(pujaName) {
+      const inp = document.getElementById('selectedPujaInput');
+      if (inp) inp.value = pujaName;
+      document.getElementById('pujaModal')?.showModal();
     }
   </script>
 </body>
