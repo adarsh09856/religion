@@ -1,0 +1,1112 @@
+/* ==========================================================================
+   BHUTAN HINDU DHARMA SABHA & THIMPHU HINDU TEMPLE (SAMTELING)
+   Divine, Spiritual, Modern & Premium Stylesheet
+   Device-Friendly (Mobile, Tablet, Desktop)
+   ========================================================================== */
+
+:root {
+  --saffron-gold: #f59e0b;
+  --saffron-dark: #d97706;
+  --saffron-light: #fef3c7;
+  --divine-crimson: #991b1b;
+  --divine-maroon: #7f1d1d;
+  --divine-maroon-hover: #991b1b;
+  --temple-navy: #071727;
+  --temple-navy-light: #0d2847;
+  --temple-blue: #0284c7;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --border-gold: #fde68a;
+  --border-color: #e2e8f0;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.05);
+  --shadow-gold: 0 10px 25px rgba(245, 158, 11, 0.2);
+  --shadow-card: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+  --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --container-max: 1240px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   TOP BAR
+   ========================================================================== */
+.temple-top-bar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.82rem;
+  color: #475569;
+  padding: 6px 0;
+}
+
+.temple-top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.top-bar-contact {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.top-bar-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-bar-contact-item svg {
+  color: var(--saffron-dark);
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.temple-socials {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-circle-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+.social-circle-btn.fb { background-color: #1877f2; }
+.social-circle-btn.yt { background-color: #ff0000; }
+.social-circle-btn.ig { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); }
+.social-circle-btn.x { background-color: #000000; }
+
+.lang-select-sm {
+  border: 1px solid var(--border-color);
+  background: transparent;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  color: #334155;
+  cursor: pointer;
+}
+
+.user-auth-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.user-auth-links a:hover {
+  color: var(--saffron-dark);
+}
+
+.btn-donate-top {
+  background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.82rem;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(234, 88, 12, 0.3);
+  transition: var(--transition);
+}
+
+.btn-donate-top:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(234, 88, 12, 0.4);
+}
+
+/* ==========================================================================
+   HEADER WITH OM CREST & MOTTO
+   ========================================================================== */
+.temple-main-header {
+  background-color: #ffffff;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.temple-header-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.temple-crest-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.om-crest-medallion {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fef3c7 0%, #fde68a 60%, #f59e0b 100%);
+  border: 2px solid #d97706;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7f1d1d;
+  font-size: 2rem;
+  font-weight: 900;
+  flex-shrink: 0;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.om-crest-medallion:hover {
+  transform: scale(1.08) rotate(5deg);
+}
+
+.temple-titles-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.temple-title-main {
+  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
+  font-weight: 800;
+  color: #071727;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.temple-shloka {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--divine-crimson);
+  letter-spacing: 1px;
+  margin: 3px 0;
+}
+
+.temple-core-pillars {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.temple-endless-knot {
+  color: #d97706;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+.temple-nav-bar {
+  background: #0d2847;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.temple-nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.temple-nav-item {
+  position: relative;
+}
+
+.temple-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 14px 16px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  transition: var(--transition);
+}
+
+.temple-nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--saffron-gold);
+}
+
+.temple-nav-link.active {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #071727;
+}
+
+.nav-dropdown-temple {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  min-width: 210px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border-top: 3px solid var(--saffron-gold);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  padding: 8px 0;
+  display: none;
+  z-index: 100;
+}
+
+.temple-nav-item:hover .nav-dropdown-temple {
+  display: block;
+}
+
+.nav-dropdown-temple a {
+  display: block;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+.nav-dropdown-temple a:hover {
+  background: #fef3c7;
+  color: var(--divine-crimson);
+  padding-left: 22px;
+}
+
+.temple-bell-trigger {
+  background: none;
+  border: none;
+  color: var(--saffron-gold);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+}
+
+.temple-bell-trigger:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   DIVINE HERO SECTION
+   ========================================================================== */
+.divine-hero {
+  position: relative;
+  background: linear-gradient(135deg, rgba(7, 23, 39, 0.85) 0%, rgba(7, 23, 39, 0.5) 45%, rgba(7, 23, 39, 0.8) 100%),
+              url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1600&q=80') center center / cover no-repeat;
+  color: #ffffff;
+  padding: 60px 0 80px;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.divine-hero-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.divine-deities-showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.deities-composite-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+  border: 4px solid rgba(245, 158, 11, 0.5);
+  background: #000;
+  max-width: 600px;
+  width: 100%;
+}
+
+.deities-composite-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.deities-composite-card:hover img {
+  transform: scale(1.03);
+}
+
+.deities-aura-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(7, 23, 39, 0.95) 0%, transparent 80%);
+  padding: 20px;
+  text-align: center;
+}
+
+.deities-sub-tags {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--saffron-gold);
+}
+
+.divine-hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.divine-mantra-title {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 12px;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+.divine-mantra-title span.om {
+  color: var(--saffron-gold);
+  display: block;
+}
+
+.divine-mantra-title span.durga {
+  color: #f87171;
+  display: block;
+}
+
+.divine-mantra-title span.ram {
+  color: #facc15;
+  display: block;
+}
+
+.divine-blessing-text {
+  font-size: 1.05rem;
+  color: #e2e8f0;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-style: italic;
+  max-width: 480px;
+  margin-left: auto;
+}
+
+.hero-lotus-seal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--saffron-gold);
+  margin-left: auto;
+}
+
+/* ==========================================================================
+   QUICK ACTION CARDS (6 CARDS)
+   ========================================================================== */
+.quick-actions-bar {
+  margin-top: -35px;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 35px;
+}
+
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+
+.quick-action-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 20px 14px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+
+.quick-action-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-gold);
+  border-color: var(--saffron-dark);
+}
+
+.quick-action-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--saffron-light);
+  color: var(--saffron-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.live-pill-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ef4444;
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  animation: pulseLive 1.5s infinite;
+}
+
+.quick-action-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #071727;
+  line-height: 1.25;
+}
+
+.quick-action-sub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+/* ==========================================================================
+   ABOUT US SECTION
+   ========================================================================== */
+.temple-about-section {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.temple-about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.temple-about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.temple-section-tag {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--divine-crimson);
+  margin-bottom: 6px;
+}
+
+.temple-section-heading {
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  font-weight: 800;
+  color: #071727;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.temple-about-p {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.btn-know-more {
+  background: var(--divine-crimson);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: var(--transition);
+}
+
+.btn-know-more:hover {
+  background: var(--divine-maroon);
+  transform: translateY(-2px);
+}
+
+.temple-about-img-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 3px solid #fde68a;
+}
+
+.temple-about-img-wrap img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   3-COLUMN INTERACTIVE GRID (EVENTS, LIVE, NEWS)
+   ========================================================================== */
+.temple-tri-grid-section {
+  padding: 40px 0 60px;
+  background-color: #fafaf9;
+  border-top: 1px solid var(--border-color);
+}
+
+.tri-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1.1fr;
+  gap: 24px;
+}
+
+.tri-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.tri-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tri-card-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #071727;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tri-card-link {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--divine-crimson);
+}
+
+/* Events List */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.event-row:hover {
+  border-color: var(--saffron-gold);
+  background: #fefce8;
+  transform: translateX(4px);
+}
+
+.event-date-box {
+  background: var(--divine-crimson);
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  min-width: 48px;
+  flex-shrink: 0;
+}
+
+.event-date-day {
+  font-size: 1.15rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.event-date-month {
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.event-info {
+  flex-grow: 1;
+}
+
+.event-name {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.event-loc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Live Streaming Card */
+.live-stream-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.live-video-preview {
+  position: relative;
+  height: 190px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: #000;
+  cursor: pointer;
+}
+
+.live-video-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.live-play-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.9);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+}
+
+.live-stream-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #071727;
+}
+
+.live-stream-loc {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.btn-watch-live {
+  background: var(--divine-crimson);
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  font-weight: 800;
+  font-size: 0.88rem;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+
+.btn-watch-live:hover {
+  background: var(--divine-maroon);
+}
+
+/* News List */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.news-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-thumb {
+  width: 60px;
+  height: 50px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.news-item-title {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.3;
+}
+
+.news-item-title:hover {
+  color: var(--divine-crimson);
+}
+
+.news-item-date {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   OUR GALLERY SECTION
+   ========================================================================== */
+.temple-gallery-section {
+  padding: 40px 0 60px;
+  background-color: #ffffff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.gallery-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  height: 160px;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ==========================================================================
+   BANNER: TOGETHER IN FAITH & SERVICES
+   ========================================================================== */
+.together-faith-banner {
+  background: linear-gradient(135deg, rgba(7, 23, 39, 0.9) 0%, rgba(13, 40, 71, 0.85) 100%),
+              url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1600&q=80') center center / cover no-repeat;
+  color: #ffffff;
+  padding: 45px 0;
+}
+
+.together-banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.together-left-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.together-left-title span {
+  color: var(--saffron-gold);
+}
+
+.temple-services-box {
+  background: rgba(255, 255, 255, 0.95);
+  color: #071727;
+  border-radius: var(--radius-md);
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.temple-services-box h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+  text-align: center;
+  color: var(--divine-crimson);
+}
+
+.services-items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.service-pill-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #334155;
+}
+
+.together-right-stupa {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.om-mani-script {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #fef08a;
+}
+
+.sacred-om-large {
+  font-size: 2.4rem;
+  color: var(--saffron-gold);
+}
+
+/* ==========================================================================
+   TEMPLE FOOTER
+   ========================================================================== */
+.temple-footer {
+  background: #071727;
+  color: #cbd5e1;
+  padding: 50px 0 20px;
+}
+
+.temple-footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1.2fr 0.8fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.temple-footer-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.temple-footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.84rem;
+}
+
+.temple-footer-links a:hover {
+  color: var(--saffron-gold);
+}
+
+.temple-footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 18px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+/* ==========================================================================
+   NATIVE MODALS (Compliant with Modern Web Guidance)
+   ========================================================================== */
+dialog:modal {
+  overscroll-behavior: contain;
+  margin: auto;
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: 0;
+  background: #ffffff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+  width: 90%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background: rgba(7, 23, 39, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.modal-header-temple {
+  background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 100%);
+  color: #ffffff;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes pulseLive {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.85; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ==========================================================================
+   RESPONSIVE QUERIES
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .quick-actions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tri-grid {
+    grid-template-columns: 1fr;
+  }
+  .together-banner-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .together-right-stupa {
+    align-items: center;
+    text-align: center;
+  }
+  .temple-about-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .divine-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .divine-hero-right {
+    text-align: center;
+  }
+  .divine-blessing-text {
+    margin-right: auto;
+  }
+  .quick-actions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .temple-footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
